@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 29 09:25:36 2019
 
-@author: Ixio
-"""
 
 import tkinter as tk
 import csv
 from tkinter import filedialog
 import re
+from configparser import ConfigParser
+import json
+import xml.etree.ElementTree as ET
+
 
 class annotatorApp(tk.Tk):
     
@@ -17,6 +17,9 @@ class annotatorApp(tk.Tk):
     
     def __init__(self, *args, **kwargs):
         
+        setting = ConfigParser()
+        setting.read('config.ini')
+        language=setting.get('general','language')
         tk.Tk.__init__(self, *args, **kwargs)
         self.geometry("800x500+20+20")    
         self.grid()
@@ -29,25 +32,39 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.grid(sticky ="nswe", column=1, row =1)
         self.textBoxAnn.config(state="disabled")
         
-        self.tagNameList = ["jeden", "dwa", "trzy"]
+
+        tags = ET.parse(setting.get(language,'tag_set_path'))
+        root = tags.getroot()
+        if tags.find('tag/name') is not None:
+            names = [events.text for events in tags.findall('tag/name')]
+        self.tagNameList = names
+
         self.tagList = tk.Listbox(width = 20, selectmode = "SINGLE", exportselection= False)
         for j in range(len(self.tagNameList)):
             self.tagList.insert(j, self.tagNameList[j])
+            
         self.tagList.grid(row=1, column = 2, sticky = "wn")
         
-        button_newAnn = tk.Button(text = "Nowa\nAnotacja", command = lambda: self.new_annatation())
+        button_newAnn = tk.Button(text = setting.get(language,'new_annotation') , command = lambda: self.new_annatation())
         button_newAnn.grid(row=2, column = 2)
         
-        
-        menuBar = tk.Menu(self)
-        
+        menuBar = tk.Menu(self)   
         menuFile = tk.Menu(menuBar, tearoff = 0)
-        menuFile.add_command(label="Wczytaj", command = lambda: self.load_file(self.wordList))   
-        menuBar.add_cascade(label ="Plik", menu = menuFile)
-        
-        
-        self.config(menu = menuBar)
-        
+#        menulanguage = tk.Menu(menuBar, tearoff = 1)
+
+        menuBar.add_cascade(label =setting.get(language,'file'), menu = menuFile)
+        menuFile.add_command(label=setting.get(language,'load'), command = lambda: self.load_file(self.wordList))   
+    
+# Jakbyśmy chcieli się powbawić w zmanę języka
+#        menuBar.add_cascade(label = setting.get(language,'language') ,menu = menulanguage )
+#        langueges_list = json.loads(setting.get(language,"languages"))
+#        for key in langueges_list.keys():
+#            if isinstance(langueges_list[key], dict)== False:
+#                menulanguage.add_command(label = key, command= change_language(key)  )
+#        self.config(menu = menuBar)
+#    def change_language(self, key):
+#        return
+
     def load_file(self, wordList):
         
         self.textDir = filedialog.askopenfilename()
