@@ -8,6 +8,10 @@ import re
 from configparser import ConfigParser
 import json
 import xml.etree.ElementTree as ET
+import lxml
+import lxml.builder
+import lxml.etree
+
 
 
 class annotatorApp(tk.Tk):
@@ -32,9 +36,7 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.grid(sticky ="nswe", column=1, row =1)
         self.textBoxAnn.config(state="disabled")
         
-
         tags = ET.parse(setting.get(language,'tag_set_path'))
-        root = tags.getroot()
         if tags.find('tag/name') is not None:
             names = [events.text for events in tags.findall('tag/name')]
         self.tagNameList = names
@@ -50,7 +52,7 @@ class annotatorApp(tk.Tk):
         
         menuBar = tk.Menu(self)   
         menuFile = tk.Menu(menuBar, tearoff = 0)
-#        menulanguage = tk.Menu(menuBar, tearoff = 1)
+ #       menulanguage = tk.Menu(menuBar, tearoff = 1)
 
         menuBar.add_cascade(label =setting.get(language,'file'), menu = menuFile)
         menuFile.add_command(label=setting.get(language,'load'), command = lambda: self.load_file(self.wordList))   
@@ -61,7 +63,9 @@ class annotatorApp(tk.Tk):
 #        for key in langueges_list.keys():
 #            if isinstance(langueges_list[key], dict)== False:
 #                menulanguage.add_command(label = key, command= change_language(key)  )
-#        self.config(menu = menuBar)
+       
+       
+        self.config(menu = menuBar)
 #    def change_language(self, key):
 #        return
 
@@ -90,31 +94,28 @@ class annotatorApp(tk.Tk):
         poczatek = 0
         niepasuje = 0
         charIdx = 0
-        self.wordList2 = []
-
-        for word in  annotatorApp.wordList:
+        self.wordList2 = lxml.builder.ElementMaker()
+        root = self.wordList2.root
+        word = self.wordList2.word
+        the_doc = root(word())
+        for words in  annotatorApp.wordList:
             nextWord = 0
             while nextWord == 0:
                 niepasuje = 0
                 poczatek = charIdx
-                for letter in range(len(word)):
-                    if word[letter] != fullText[charIdx + letter]:
+                for letter in range(len(words)):
+                    if words[letter] != fullText[charIdx + letter]:
                         niepasuje = 1
                 charIdx += 1
                 if niepasuje == 0:
                     nextWord = 1
                 
                 #jak tu jesteś to znaczy że znaleziono kolejne całe słowo
-            charIdx += len(word)
-            self.wordList2.append([word, poczatek, poczatek + len(word) - 1])
-        print(self.wordList2)
-                
-                
-                            
-                            
-                    
-                    
-            
+            charIdx += len(words)
+            the_doc.append(word(words, poczatek=str(poczatek), koniec=str(poczatek + (len(words) - 1) )))
+       
+        print(lxml.etree.tostring(the_doc, pretty_print=True))
+               
         
         annotatorApp.refresh(self)
         
@@ -168,10 +169,7 @@ class annotatorApp(tk.Tk):
             for row in f:
                rowLenList.append(len(row)) 
         
-        
-        
-        
-        
+       
         selectionStartIdx = 0
 
         for row in range(int(selectionStart[0])):
@@ -200,6 +198,7 @@ class annotatorApp(tk.Tk):
         
         print("selectionEndIdx "+ str(selectionEndIdx))
      
+       
         startFound = 0
         lookAtWord = 0
         while startFound == 0:   
@@ -234,19 +233,7 @@ class annotatorApp(tk.Tk):
    #     self.textBoxMain.tag_add("one", "1.0", "1.0 wordend")
     #    self.textBoxMain.tag_config("one", foreground="red")
         
-            
 
-        
-                
-        
-                    
-        
-    
-       
-        
-        
-        
-        
         
         
 app = annotatorApp()
