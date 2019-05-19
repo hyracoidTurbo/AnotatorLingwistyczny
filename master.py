@@ -112,7 +112,7 @@ class annotatorApp(tk.Tk):
                 
                 #jak tu jesteś to znaczy że znaleziono kolejne całe słowo
             charIdx += len(words)
-            the_doc.append(word(words, beginning=str(poczatek), end=str(poczatek + (len(words)),lenght=str((len(words))))
+            the_doc.append(word(words, beginning=str(poczatek), end=str(poczatek + len(words)),lenght=str(len(words))))
        
         print(lxml.etree.tostring(the_doc, pretty_print=True))
                
