@@ -28,6 +28,11 @@ class annotatorApp(tk.Tk):
         self.geometry("800x500+20+20")    
         self.grid()
         
+        self.root = lxml.etree.Element("root")
+        lxml.etree.SubElement(self.root, "head")
+        lxml.etree.SubElement(self.root, "tags")
+        lxml.etree.SubElement(self.root, "fulltext")
+
         self.textBoxMain = tk.Text()
         self.textBoxMain.grid(sticky ="nswe", column=0, row =1)
         self.textBoxMain.config(state="disabled")
@@ -55,7 +60,8 @@ class annotatorApp(tk.Tk):
  #       menulanguage = tk.Menu(menuBar, tearoff = 1)
 
         menuBar.add_cascade(label =setting.get(language,'file'), menu = menuFile)
-        menuFile.add_command(label=setting.get(language,'load'), command = lambda: self.load_file(self.wordList))   
+        menuFile.add_command(label=setting.get(language,'load'), command = lambda: self.load_file(self.wordList))
+        menuFile.add_command(label=setting.get(language,'save'), command = lambda: self.save_file(self.root))      
     
 # Jakbyśmy chcieli się powbawić w zmanę języka
 #        menuBar.add_cascade(label = setting.get(language,'language') ,menu = menulanguage )
@@ -68,7 +74,13 @@ class annotatorApp(tk.Tk):
         self.config(menu = menuBar)
 #    def change_language(self, key):
 #        return
-
+    def save_file(self, root):
+        if root.find('./head/tag') is not None:
+            tree = lxml.etree.ElementTree()
+            tree._setroot(root)
+            tree.write("sample.xml")
+        print(lxml.etree.tostring (root, pretty_print = True))  
+  
     def load_file(self, wordList):
         
         self.textDir = filedialog.askopenfilename()
@@ -94,10 +106,9 @@ class annotatorApp(tk.Tk):
         poczatek = 0
         niepasuje = 0
         charIdx = 0
-        self.wordList2 = lxml.builder.ElementMaker()
-        root = self.wordList2.root
-        word = self.wordList2.word
-        the_doc = root(word())
+
+        
+        
         for words in  annotatorApp.wordList:
             nextWord = 0
             while nextWord == 0:
@@ -112,9 +123,16 @@ class annotatorApp(tk.Tk):
                 
                 #jak tu jesteś to znaczy że znaleziono kolejne całe słowo
             charIdx += len(words)
-            the_doc.append(word(words, beginning=str(poczatek), end=str(poczatek + len(words)),lenght=str(len(words))))
+            
+            neww = lxml.etree.Element ("word") 
+            neww.text = words 
+            neww.attrib["beginning"]=str(poczatek)
+            neww.attrib["end"]=str(poczatek + len(words))
+            neww.attrib["lenght"]=str(len(words))
+            self.root.find("./fulltext").append(neww) 
+            
        
-        print(lxml.etree.tostring(the_doc, pretty_print=True))
+        print(lxml.etree.tostring(self.root, pretty_print=True))
                
         
         annotatorApp.refresh(self)
@@ -160,6 +178,7 @@ class annotatorApp(tk.Tk):
         
         selectionStart = self.textBoxMain.index("sel.first")
         selectionEnd = self.textBoxMain.index("sel.last")
+        print("text:" + str(self.textBoxMain.selection_get()))
         print("SelStart:" + str(selectionStart))
         print("SelEnd:" + str(selectionEnd))
         
@@ -232,9 +251,65 @@ class annotatorApp(tk.Tk):
 
    #     self.textBoxMain.tag_add("one", "1.0", "1.0 wordend")
     #    self.textBoxMain.tag_config("one", foreground="red")
-        
 
+    def annotate_base(self, tag):
+    
+        selectionStart = self.textBoxMain.index("sel.first")
+        selectionEnd = self.textBoxMain.index("sel.last")    
+        selectionStartIdx = 0
+        rowLenList = []
+        with open(self.textDir) as f:
+            for row in f:
+                rowLenList.append(len(row)) 
+        for row in range(int(selectionStart[0])):
+            if row == int(selectionStart[0]) - 1:
+                selectionStartIdx += int(selectionStart[2:])
+            else:
+                selectionStartIdx += rowLenList[row]
+            
+        print("selectionStartIdx "+ str(selectionStartIdx))
+                      
         
+        selectionEndIdx = 0
         
+        for row in range(int(selectionEnd[0])):
+            if row == int(selectionEnd[0]) - 1:
+                selectionEndIdx += int(selectionEnd[2:])
+            else:
+                selectionEndIdx += rowLenList[row]
+                
+        selectionEndIdx -= 1
+            
+        print("selectionEndIdx "+ str(selectionEndIdx))   
+
+
+        if self.root.find('./head/tag[@name="'+tag+'"]') is None:
+            mtag = lxml.etree.Element("tag") 
+            mtag.attrib["name"]=tag
+            mtag.attrib["amount"]="1"
+            self.root.find("./head/tag").append(mtag) 
+        else:
+            self.root.find('./head/tag[@name="'+tag+'"]').attrib["amount"]= str(int(self.root.find('./head/tag[@name="'+tag+'"]').attrib["amount"])+1)
+    
+        etag = lxml.etree.Element("tag") 
+        etag.text = self.textBoxMain.selection_get()
+        etag.attrib["name"]=tag
+        etag.attrib["beginning"]=str(selectionStartIdx)
+        etag.attrib["end"]=str(selectionEndIdx)
+        etag.attrib["lenght"]=str(selectionEndIdx-selectionStartIdx)
+        self.root.find("./tags").append(etag) 
+
+
+    
+    def annotate(self, tag, tag_type):
+        switcher = {
+            "base": self.annotate_base,    
+            
+        }
+    
+        func = switcher.get(tag_type, lambda: "Invalid month")
+        func(self, tag)
+
+      
 app = annotatorApp()
 app.mainloop()
