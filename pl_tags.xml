@@ -1,11 +1,13 @@
-<tags>
-<tag>
-<name>jeden </name>
-</tag>
-<tag>
-<name>dwa </name>
-</tag>
-<tag>
-<name>trzy </name>
-</tag>
-</tags>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE baza_filmow SYSTEM "rules.dtd">
+<tagset>
+    <tag id="1">
+      <nazwa>Ironia</nazwa>
+      <nazwa_tagu>irony</nazwa>
+      <nazwa_rodziny>Pragmatyka</nazwa_rodziny>
+      <opis>Środek wprowadzający podwójne znaczenie do wypowiedzi</opis>
+      <literatura>Francesco Sraipopolu - Encyklopedia Frajerstwa</literatura>
+      <relacja>Cała fraza</relacja>
+      <przykład>"Wspaniale ci to wyszło, a teraz zrób to od nowa"</przykład>
+</tagset>
+<!--To jest komentarz -- >
