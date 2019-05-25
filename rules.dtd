@@ -1,0 +1,11 @@
+<!ELEMENT tagset (tag)+> 
+<!ELEMENT tag (nazwa,opis,relacja,przykład,nazwa_rodziny)>
+<!ATTLIST tag id CDATA #REQUIRED>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT nazwa_tagu (#PCDATA)>
+<!ELEMENT nazwa_rodziny (#PCDATA)>
+<!ELEMENT opis (#PCDATA)>
+<!ELEMENT literatura (#PCDATA)>
+<!ELEMENT relacja (#PCDATA)>
+<!ELEMENT przykład (#PCDATA)>
+
