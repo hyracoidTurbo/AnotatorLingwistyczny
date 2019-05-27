@@ -2,7 +2,7 @@
 <!DOCTYPE baza_filmow SYSTEM "rules.dtd">
 <tagset>
     <family>
-        <lingwistyka name="Analiza Lingwistyczna">  <!-- albo rodzina styl idk-- >
+        <lingwistyka name="Analiza Lingwistyczna">  
             ...
         </lingwistyka>
         <pragmatyka name="Pragmatyka">
