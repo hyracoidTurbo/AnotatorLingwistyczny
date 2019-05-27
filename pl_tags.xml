@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE baza_filmow SYSTEM "rules.dtd">
 <tagset>
-    <tag id="1">
-      <nazwa>Ironia</nazwa>
-      <nazwa_tagu>irony</nazwa>
-      <nazwa_rodziny>Pragmatyka</nazwa_rodziny>
-      <opis>Środek wprowadzający podwójne znaczenie do wypowiedzi</opis>
-      <literatura>Francesco Sraipopolu - Encyklopedia Frajerstwa</literatura>
-      <relacja>Cała fraza</relacja>
-      <przykład>"Wspaniale ci to wyszło, a teraz zrób to od nowa"</przykład>
+    <family>
+        <lingwistyka name="Analiza Lingwistyczna">  <!-- albo rodzina styl idk-- >
+            ...
+        </lingwistyka>
+        <pragmatyka name="Pragmatyka">
+            <tag id="1">
+                <nazwa>Ironia</nazwa>
+                <nazwa_tagu>irony</nazwa>
+                <nazwa_rodziny>Pragmatyka</nazwa_rodziny>
+                <opis>Środek wprowadzający podwójne znaczenie do wypowiedzi</opis>
+                <literatura>Francesco Sraipopolu - Encyklopedia Frajerstwa</literatura>
+                <relacja>Cała fraza</relacja>
+                <przykład>"Wspaniale ci to wyszło, a teraz zrób to od nowa"</przykład>
+                <warianty>
+                    <w id="1">
+                        <nazwa_wariantu>Sarkazm</nazwa_wariantu>
+                        <opis_wariantu>Jakiś opis</opis_wariantu> 
+                    </w>
+                    <w id="2">
+                    </w>
+                </warianty>
+            </tag>
+        </pragmatyka>
+        <retoryka>
+            ...
+        </retoryka>
+        <socjolingwistyka name="Socjolingwistyka">
+            ...
+        </socjolingwistyka>
+        <dyskurs name="Analiza Dyskursu">
+        ...
+        </dyskurs>
+        <user_defined name="Rodzina Użytkownika">
+        ...
+        </user_defined>
+    </family>
 </tagset>
+
 <!--To jest komentarz -- >
