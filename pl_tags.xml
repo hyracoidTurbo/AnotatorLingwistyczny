@@ -2,10 +2,10 @@
 <!DOCTYPE baza_filmow SYSTEM "rules.dtd">
 <tagset>
     <family>
-        <lingwistyka name="Analiza Lingwistyczna">  
+        <lingwistyka name="Analiza Lingwistyczna" color="#387C44">  
             ...
         </lingwistyka>
-        <pragmatyka name="Pragmatyka">
+        <pragmatyka name="Pragmatyka" color="#F87217">
             <tag id="1">
                 <nazwa>Ironia</nazwa>
                 <nazwa_tagu>irony</nazwa>
@@ -24,16 +24,16 @@
                 </warianty>
             </tag>
         </pragmatyka>
-        <retoryka>
+        <retoryka name="Retoryka" color="#5e3219">
             ...
         </retoryka>
-        <socjolingwistyka name="Socjolingwistyka">
+        <socjolingwistyka name="Socjolingwistyka" color="#357EC7">
             ...
         </socjolingwistyka>
-        <dyskurs name="Analiza Dyskursu">
+        <dyskurs name="Analiza Dyskursu" color="#6D7B8D">
         ...
         </dyskurs>
-        <user_defined name="Rodzina Użytkownika">
+        <user_defined name="Rodzina Użytkownika" color="#625D5D">
         ...
         </user_defined>
     </family>
