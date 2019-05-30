@@ -11,6 +11,22 @@
                 <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Reportaż; notatka prasowa; wywiad; kodeks prawny etc.</example>
             </tag>
+            <tag id="3">
+                <name>Dialogiczność</name>
+                <tag_name>p:dialogism</tag_name>
+                <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 181 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>
+            <tag id="8">
+                <name>Narracyjność</name>
+                <tag_name>p:narrativity</tag_name>
+                <description>Styl wypowiedzi mający cechy narracji. Nie musi być narracją (choć w pewnym sensie wszystko jest narracją) - ale jego funkcją jest opowiedzenie czegoś - komuś.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 661 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>       
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
@@ -29,13 +45,7 @@
                 <relation>Słowo</relation>
                 <example>To, tamto, tu, gdzie, wtedy, ten, tamta itd.</example>
             </tag>            
-            <tag id="3">
-                <name>Dialogiczność</name>
-                <tag_name>p:dialogism</tag_name>
-                <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
-                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 181 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
-                <example></example>
+
             </tag>            
             <tag id="4">
                 <name>Humor</name>
@@ -77,6 +87,15 @@
                 <relation>Dowolny fragment</relation>
                 <example>Profesor dostał Nobla za odkrycia w dziedzinie agresji laboratoryjnej (nagrodę im. Alfreda Nobla). Warszawa jest ewidentnie skłócona z Brukselą (polski rząd z polityką Unii Europejskiej).(</example>
             </tag>               
+            <tag id="8">
+                <name>FTA</name>
+                <tag_name>p:FTA</tag_name>
+                <description></description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>(</example>
+            </tag>             
+
             
         </family>
         <family name="Retoryka" color="#5e3219">
