@@ -23,6 +23,23 @@
                     </w>
                 </warianty>
             </tag>
+            
+            <tag id="2">
+                <nazwa>Code Switching</nazwa>
+                <nazwa_tagu>p:cswitch</nazwa>
+                <nazwa_rodziny>Pragmatyka</nazwa_rodziny>
+                <opis>Zmiana języka, rejestru lub kodu podczas wypowiedzi. Naprzemienne użycie dwóch lub więcej kodów.</opis>
+                <literatura>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literatura>
+                <relacja>Cała fraza</relacja>
+                <przyklad>"Sometimes I’ll start a sentence in English y termino en español."</przyklad>
+                <warianty>
+                    <w id="1">
+                        <nazwa_wariantu>Code-mixing</nazwa_wariantu>
+                        <opis_wariantu>Podczas gdy CS odnosi się ogólnie do zmiany kodu, code-mixing polega na mieszaniu kodów na poziomie składniowym, w obrębie zdania.</opis_wariantu> 
+                    </w>
+                </warianty>
+            </tag>
+                
         </pragmatyka>
         <retoryka name="Retoryka" color="#5e3219">
             ...
