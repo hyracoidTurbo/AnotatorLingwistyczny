@@ -24,10 +24,17 @@
                 </warianty>
             </tag>
             
-            <tag id="2">
+
+                
+        </pragmatyka>
+        <retoryka name="Retoryka" color="#5e3219">
+            ...
+        </retoryka>
+        <socjolingwistyka name="Socjolingwistyka" color="#357EC7">
+            <tag id="1">
                 <nazwa>Code Switching</nazwa>
                 <nazwa_tagu>p:cswitch</nazwa>
-                <nazwa_rodziny>Pragmatyka</nazwa_rodziny>
+                <nazwa_rodziny>Socjolingwistyka</nazwa_rodziny>
                 <opis>Zmiana języka, rejestru lub kodu podczas wypowiedzi. Naprzemienne użycie dwóch lub więcej kodów.</opis>
                 <literatura>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literatura>
                 <relacja>Cała fraza</relacja>
@@ -39,13 +46,6 @@
                     </w>
                 </warianty>
             </tag>
-                
-        </pragmatyka>
-        <retoryka name="Retoryka" color="#5e3219">
-            ...
-        </retoryka>
-        <socjolingwistyka name="Socjolingwistyka" color="#357EC7">
-            ...
         </socjolingwistyka>
         <dyskurs name="Analiza Dyskursu" color="#6D7B8D">
         ...
