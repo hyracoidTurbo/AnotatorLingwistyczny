@@ -28,6 +28,8 @@ class annotatorApp(tk.Tk):
         self.geometry("800x500+20+20")    
         self.grid()
         
+
+        
         self.root = lxml.etree.Element("root")
         lxml.etree.SubElement(self.root, "head")
         lxml.etree.SubElement(self.root, "tags")
@@ -282,7 +284,7 @@ class annotatorApp(tk.Tk):
             
         print("selectionEndIdx "+ str(selectionEndIdx))   
 
-
+        #dodaję do meta danych inforacje o utworzeniu taga
         if self.root.find('./head/tag[@name="'+tag+'"]') is None:
             mtag = lxml.etree.Element("tag") 
             mtag.attrib["name"]=tag
@@ -290,7 +292,8 @@ class annotatorApp(tk.Tk):
             self.root.find("./head/tag").append(mtag) 
         else:
             self.root.find('./head/tag[@name="'+tag+'"]').attrib["amount"]= str(int(self.root.find('./head/tag[@name="'+tag+'"]').attrib["amount"])+1)
-    
+
+        
         etag = lxml.etree.Element("tag") 
         etag.text = self.textBoxMain.selection_get()
         etag.attrib["name"]=tag

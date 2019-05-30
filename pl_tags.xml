@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE baza_filmow SYSTEM "rules.dtd">
 <tagset>
-    <family>
-        <lingwistyka name="Analiza Lingwistyczna" color="#387C44">  
+    
+        <family name="Analiza Lingwistyczna" color="#387C44">  
             ...
-        </lingwistyka>
-        <pragmatyka name="Pragmatyka" color="#F87217">
+        </family>
+        <family name="Pragmatyka" color="#F87217">
             <tag id="1">
                 <nazwa>Ironia</nazwa>
                 <nazwa_tagu>irony</nazwa>
@@ -26,11 +26,11 @@
             
 
                 
-        </pragmatyka>
-        <retoryka name="Retoryka" color="#5e3219">
+        </family>
+        <family name="Retoryka" color="#5e3219">
             ...
-        </retoryka>
-        <socjolingwistyka name="Socjolingwistyka" color="#357EC7">
+        </family>
+        <family name="Socjolingwistyka" color="#357EC7">
             <tag id="1">
                 <nazwa>Code Switching</nazwa>
                 <nazwa_tagu>p:cswitch</nazwa>
@@ -46,14 +46,14 @@
                     </w>
                 </warianty>
             </tag>
-        </socjolingwistyka>
-        <dyskurs name="Analiza Dyskursu" color="#6D7B8D">
+        </family>
+        <family name="Analiza Dyskursu" color="#6D7B8D">
         ...
-        </dyskurs>
-        <user_defined name="Rodzina Użytkownika" color="#625D5D">
+        </family>
+        <family name="Rodzina Użytkownika" color="#625D5D">
         ...
-        </user_defined>
-    </family>
+        </family>
+    
 </tagset>
 
 <!--To jest komentarz -- >
