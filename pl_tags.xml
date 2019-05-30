@@ -3,7 +3,14 @@
 <tagset>
     
         <family name="Analiza Lingwistyczna" color="#387C44">  
-            ...
+            <tag id="1">
+                <name>Gatunek</name>
+                <tag_name>l:genre</tag_name>
+                <description>Gatunekt tekstu lub fragmentu tekstu.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 286 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>Reportaż; notatka prasowa; wywiad; kodeks prawny etc.</example>
+            </tag>
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
@@ -30,8 +37,30 @@
                 <relation>Dowolny fragment</relation>
                 <example></example>
             </tag>            
-
-                
+            <tag id="4">
+                <name>Humor</name>
+                <tag_name>p:humor</tag_name>
+                <description>Żarty, komizmy, dwuznaczne aluzje, rubaszności, wypowiedzi mające na celu rozbawienie publiczności.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 335 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>            
+            <tag id="5">
+                <name>Implikatura</name>
+                <tag_name>p:implicature</tag_name>
+                <description>Zachowanie komunikacyjne łamiące zasady kooperacji.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 365 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment i notatka użytkownika</relation>
+                <example>"Duszno tutaj" - ukryta prośba o otworzenie okna.</example>
+            </tag>      
+            <tag id="5">
+                <name>Ironia</name>
+                <tag_name>p:irony</tag_name>
+                <description>Figura polegająca na dwugłosowości, dystansie do znaczenia dosłownego. Jest to wyrażanie opinii na temat tego co się właśnie wyraża (a nie przedmiotu lub sytuacji do której odnosi się wypowiedź).</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 405 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>                     
         </family>
         <family name="Retoryka" color="#5e3219">
             ...
