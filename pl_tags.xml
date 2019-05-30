@@ -7,23 +7,29 @@
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
-                <nazwa>Ironia</nazwa>
-                <nazwa_tagu>irony</nazwa>
-                <nazwa_rodziny>Pragmatyka</nazwa_rodziny>
-                <opis>Środek wprowadzający podwójne znaczenie do wypowiedzi</opis>
-                <literatura>Francesco Sraipopolu - Encyklopedia Frajerstwa</literatura>
-                <relacja>Cała fraza</relacja>
-                <przyklad>"Wspaniale ci to wyszło, a teraz zrób to od nowa"</przyklad>
-                <warianty>
-                    <w id="1">
-                        <nazwa_wariantu>Sarkazm</nazwa_wariantu>
-                        <opis_wariantu>Jakiś opis</opis_wariantu> 
-                    </w>
-                    <w id="2">
-                    </w>
-                </warianty>
+                <name>Kontekst Komunikacyjny</name>
+                <tag_name>p:context</tag_name>
+                <description>Wspólna wiedza, nie wymagająca wyjaśnienia dla uczestników komunikacji. Kontekst może być również ustalany w toku wypowiedzi.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 119 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example></example>
             </tag>
-            
+            <tag id="2">
+                <name>Deiksa</name>
+                <tag_name>p:deixis</tag_name>
+                <description>Wskazanie, odwołanie do jakiegoś obiektu w czasie lub przestrzeni. Może służyć wzmocnieniu przekazu, wywołaniu kontekstu lub dyskursu.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 178 (Elsevier, 2009)</literature>
+                <relation>Słowo</relation>
+                <example>To, tamto, tu, gdzie, wtedy, ten, tamta itd.</example>
+            </tag>            
+            <tag id="3">
+                <name>Dialogiczność</name>
+                <tag_name>p:dialogism</tag_name>
+                <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 181 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>            
 
                 
         </family>
@@ -32,20 +38,39 @@
         </family>
         <family name="Socjolingwistyka" color="#357EC7">
             <tag id="1">
-                <nazwa>Code Switching</nazwa>
-                <nazwa_tagu>p:cswitch</nazwa>
-                <nazwa_rodziny>Socjolingwistyka</nazwa_rodziny>
-                <opis>Zmiana języka, rejestru lub kodu podczas wypowiedzi. Naprzemienne użycie dwóch lub więcej kodów.</opis>
-                <literatura>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literatura>
-                <relacja>Cała fraza</relacja>
-                <przyklad>"Sometimes I’ll start a sentence in English y termino en español."</przyklad>
-                <warianty>
-                    <w id="1">
-                        <nazwa_wariantu>Code-mixing</nazwa_wariantu>
-                        <opis_wariantu>Podczas gdy CS odnosi się ogólnie do zmiany kodu, code-mixing polega na mieszaniu kodów na poziomie składniowym, w obrębie zdania.</opis_wariantu> 
-                    </w>
-                </warianty>
+                <name>Code Switching</name>
+                <tag_name>sl:cswitch</tag_name>
+                <description>Zmiana języka, rejestru lub kodu podczas wypowiedzi. Naprzemienne użycie dwóch lub więcej kodów.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literature>
+                <relation>Cała fraza</relation>
+                <example>"Sometimes I’ll start a sentence in English y termino en español."</example>
             </tag>
+            <tag id="2">
+                <name>Code Mixing</name>
+                <tag_name>sl:cswitch:mix</tag_name>
+                <description>Podczas gdy Code Switching odnosi się ogólnie do zmiany kodu, code-mixing polega na mieszaniu kodów na poziomie składniowym, w obrębie zdania.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literature>
+                <relation>Cała fraza</relation>
+                <example>"Sometimes I’ll start a sentence in English y termino en español."</example>
+            </tag>     
+            <tag id="3">
+                <name>Wspólnota Dyskursu</name>
+                <tag_name>sl:community:disc</tag_name>
+                <description>Charakterystyczny styl komunikacji związany ze wspólnotą ludzi, komunikujących się ze sobą w określonym celu. Może się realizować na poziomie leksyki, składni, doboru tematów. Przy wyborze etykiety należy wprowadzić nazwę wspólnoty.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 109 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>Np. Wspólnota: politycy; uczniowie; prawnicy</example>
+            </tag>
+            
+            <tag id="4">
+                <name>Wspólnota Mowy</name>
+                <tag_name>sl:community:speech</tag_name>
+                <description>Charakterystyczny styl komunikacji związany ze wspólnotą ludzi, komunikujących się w obrębie jakiejś przestrzeni geograficznej. Przy wyborze etykiety należy wprowadzić nazwę wspólnoty.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 109 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>Np. Wspólnota: warszawiacy; ślązacy</example>
+            </tag>
+            
         </family>
         <family name="Analiza Dyskursu" color="#6D7B8D">
         ...
