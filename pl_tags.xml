@@ -88,14 +88,46 @@
                 <example>Profesor dostał Nobla za odkrycia w dziedzinie agresji laboratoryjnej (nagrodę im. Alfreda Nobla). Warszawa jest ewidentnie skłócona z Brukselą (polski rząd z polityką Unii Europejskiej).(</example>
             </tag>               
             <tag id="8">
-                <name>FTA</name>
-                <tag_name>p:FTA</tag_name>
-                <description></description>
-                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009)</literature>
+                <name>FTA - Akty zagrażające negatywnej twarzy</name>
+                <tag_name>p:FTA:negative</tag_name>
+                <description>Zagrożenie po stronie słuchacza: żądania, prośby, propozycje, komplementy, obietnice; zagrożenie po stronie nadawcy: podziękowania, przyjmowanie propozycji.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 41 (Psychology Press, 2013)</literature>
                 <relation>Dowolny fragment</relation>
-                <example>(</example>
+                <example></example>
             </tag>             
-
+            <tag id="9">
+                <name>FTA - Akty zagrażające pozytywnej twarzy</name>
+                <tag_name>p:FTA:positive</tag_name>
+                <description>Zagrożenie po stronie słuchacza: nieporozumienia, krytyka, skargi; Zagrożenie po stronie nadawcy:  przeprosiny, niekontrolowanie emocji, przyjęcie komplementu.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 41 (Psychology Press, 2013)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>   
+            <tag id="10">
+                <name>Akty zagrażające własnej twarzy</name>
+                <tag_name>p:FTA:self</tag_name>
+                <description>Akty autodeprecjacji.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use (Psychology Press, 2013)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>   
+            <tag id="11">
+                <name>Grzeczność pozytywna</name>
+                <tag_name>p:polite:positive</tag_name>
+                <description>Akty dążące do "wyjścia naprzeciw odbiorcy - wytyczenie wspólnego gruntu, ustalenie współpracy, spełnianie życzeń i potrzeb odbiorcy, skracanie dystansu i familiarność.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 43 (Psychology Press, 2013)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>  
+    
+            <tag id="12">
+                <name>Grzeczność negatywna</name>
+                <tag_name>p:polite:negative</tag_name>
+                <description>Akty dążące do "zostawienia przestrzeni" odbiorcy. Unikanie bezpośrednich zwrotów, zostawianie dystansu, unikanie wywierania presji, unikanie konfrontacji, unikanie robienia założeń.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 43 (Psychology Press, 2013)</literature>
+                <relation>Dowolny fragment</relation>
+                <example></example>
+            </tag>
             
         </family>
         <family name="Retoryka" color="#5e3219">
