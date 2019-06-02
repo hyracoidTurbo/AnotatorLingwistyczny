@@ -115,6 +115,22 @@
                 <relation>Dowolny fragment</relation>
                 <example>Jej zęby lśniły jak perły w koronie monarchy.</example>
             </tag>                 
+            <tag id="15">
+                <name>Modalność epistemiczna</name>
+                <tag_name>l:modal:epistemic</tag_name>
+                <description>Czasowniki odpowiadające za wiedzę, poznanie, przekonania, percepcję</description>
+                <literature></literature>
+                <relation>Dowolny fragment</relation>
+                <example>Czuć; widzieć; słyszeć; myśleć; chcieć; wiedzieć; verba sentiendi</example>
+            </tag>    
+            <tag id="16">
+                <name>Modalność deontyczna</name>
+                <tag_name>l:modal:deontic</tag_name>
+                <description>Czasowniki odpowiadające za powinność, zobligowanie, poświęcenie, pozwolenie. Lub inne formy gramatyczne realizujące modalność</description>
+                <literature></literature>
+                <relation>Dowolny fragment</relation>
+                <example>Musieć; "możesz skończyć", "będziesz nagrodzony"</example>
+            </tag>                 
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
@@ -266,7 +282,7 @@
                 <description>Zmiana języka, rejestru lub kodu podczas wypowiedzi. Naprzemienne użycie dwóch lub więcej kodów.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literature>
                 <relation>Cała fraza</relation>
-                <example>"Sometimes I’ll start a sentence in English y termino en español."</example>
+                <example>"Zbliża się kolejny egzamin. FML kill me plz"</example>
             </tag>
             <tag id="2">
                 <name>Code Mixing</name>
@@ -293,7 +309,7 @@
                 <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. Wspólnota: warszawiacy; ślązacy</example>
             </tag>
-            <tag id="4">
+            <tag id="5">
                 <name>Umocowanie</name>
                 <tag_name>sl:footing</tag_name>
                 <description>Umocowanie - footing, jest pozycją zajmowaną w konwersacji. Osoba może przyjmować różne pozycje - style konwersacyjne w zależności od kontekstu, odbiorcy. Te pozycje mogą być instytucjonalne, interakcyjne, socjokulturowe. Nadawcy są tu rozumiani jako aktorzy społeczni.</description>
@@ -301,8 +317,30 @@
                 <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Przyjęta postawa: matka; dyrektorka; klientka.</example>
             </tag>
-            
-            
+            <tag id="6">
+                <name>Rejestr wysoki</name>
+                <tag_name>sl:register:high</tag_name>
+                <description>Sposób pisania lub mówienia odpowiadający wysokiemu stylowi.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Styl akademicki</example>
+            </tag>     
+            <tag id="7">
+                <name>Rejestr niski</name>
+                <tag_name>sl:register:low</tag_name>
+                <description>Sposób pisania lub mówienia postrzegany jako np. potoczny.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Rozmowa studentek i studentów na korytarzu.</example>
+            </tag>     
+            <tag id="8">
+                <name>Rejestr: własna etykieta</name>
+                <tag_name>sl:register:user</tag_name>
+                <description>Charakterystyczny rejestr wyróżniający dany tekst/wypowiedź. Użytkownik opisuje rodzaj rejestru.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment i notatka użytkownika</relation>
+                <example>Rejestr: klasa średnia</example>
+            </tag> 
         </family>
         <family name="Analiza Dyskursu" color="#6D7B8D">
             <tag id="1">
