@@ -11,7 +11,7 @@
                 <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Reportaż; notatka prasowa; wywiad; kodeks prawny etc.</example>
             </tag>
-            <tag id="3">
+            <tag id="2">
                 <name>Dialogiczność</name>
                 <tag_name>l:dialogism</tag_name>
                 <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
@@ -19,7 +19,7 @@
                 <relation>Dowolny fragment</relation>
                 <example></example>
             </tag>
-            <tag id="8">
+            <tag id="3">
                 <name>Narracyjność</name>
                 <tag_name>p:narrativity</tag_name>
                 <description>Styl wypowiedzi mający cechy narracji. Nie musi być narracją (choć w pewnym sensie wszystko jest narracją) - ale jego funkcją jest opowiedzenie czegoś - komuś.</description>
@@ -27,7 +27,7 @@
                 <relation>Dowolny fragment</relation>
                 <example></example>
             </tag>
-            <tag id="6">
+            <tag id="4">
                 <name>Metafora</name>
                 <tag_name>l:metaphor</tag_name>
                 <description>Figura złożona z tematu, nośnika i motywacji (części wspólnej), wyrażająca coś za pomocą złożenia tych elementów. Może pełnić funkcję ozdobną, argumentacyjną, poznawczą, definicyjną.</description>
@@ -35,15 +35,15 @@
                 <relation>Dowolny fragment</relation>
                 <example>Serce zadrżało mu na myśl, że świat może nie istnieć (wszedł w stan zaniepokojenia).</example>
             </tag>     
-            <tag id="7">
+            <tag id="5">
                 <name>Metonimia</name>
                 <tag_name>l:metonymy</tag_name>
                 <description>Figura, poprzez którą jeden element zostaje zastąpiony drugim na mocy przyległości semantycznej. Metonimia eksploruje domeny pojęciowe i zapożycza ich elementy (transfer metonimiczny).</description>
-                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 631 (Elsevier, 2009)</literature>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 631 (Elsevier, 2009); Alan Cruse, Glossary of Semantics and Pragmatics, s. 108 (Edinburgh University Press, 2006).</literature>
                 <relation>Dowolny fragment</relation>
                 <example>Profesor dostał Nobla za odkrycia w dziedzinie agresji laboratoryjnej (nagrodę im. Alfreda Nobla). Warszawa jest ewidentnie skłócona z Brukselą (polski rząd z polityką Unii Europejskiej).(</example>
             </tag> 
-            <tag id="7">
+            <tag id="6">
                 <name>Elipsa</name>
                 <tag_name>l:elipsis</tag_name>
                 <description>Niekompletne zdanie, wyrzucona część zdania (stąd nazwa "wyrzutnia"), kluczowa do jego zrozumienia. Sens elipsy ujawnia się wyłącznie w kontekście.</description>
@@ -59,7 +59,7 @@
                 <relation>Dowolny fragment</relation>
                 <example>Co za bezczelność!</example>
             </tag>             
-            <tag id="7">
+            <tag id="8">
                 <name>Hiperbola</name>
                 <tag_name>l:hyperbole</tag_name>
                 <description>Figura polegająca na przerysowaniu, wyolbrzymieniu (negatywnym lub pozytywnym).</description>
@@ -67,7 +67,7 @@
                 <relation>Dowolny fragment</relation>
                 <example>Kleszcze miał wielkości karaluchów. On nigdy nie przestaje mówić. Stoimy w korku wieczność.</example>
             </tag> 
-            <tag id="7">
+            <tag id="9">
                 <name>Litota</name>
                 <tag_name>l:litote</tag_name>
                 <description>Niedopowiedzenie, umniejszenie. Figura, która zaniża ilość, intensywność, powagę, moc stwierdzenia.</description>
@@ -75,7 +75,7 @@
                 <relation>Dowolny fragment</relation>
                 <example>"Trochę się zmęczyłem" (po maratonie).</example>
             </tag>     
-            <tag id="7">
+            <tag id="10">
                 <name>Personifikacja</name>
                 <tag_name>l:personification</tag_name>
                 <description>Figura polegająca na nadaniu ludzkich cech obiektowi nieludzkiemu.</description>
@@ -83,15 +83,15 @@
                 <relation>Dowolny fragment</relation>
                 <example>Wulkan wściekle zagrzmiał, mściwie strzelił płomieniami.</example>
             </tag>   
-            <tag id="7">
+            <tag id="11">
                 <name>Uprzedmiotowienie</name>
                 <tag_name>l:objectification</tag_name>
                 <description>Figura polegająca na odebraniu ludzkich cech osobie. Depersonifikacja, depersonalizacja, dehumanizacja.</description>
-                <literature>Alan Cruse, Glossary of Semantics and PragmaticS (Edinburgh University Press, 2006).</literature>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics (Edinburgh University Press, 2006).</literature>
                 <relation>Dowolny fragment</relation>
                 <example>Oni są niczym więcej jak śmierdzącym łajnem leżącym na środku drogi.</example>
             </tag>
-            <tag id="7">
+            <tag id="12">
                 <name>Wulgaryzm</name>
                 <tag_name>l:profanity</tag_name>
                 <description>Słowa i wyrażenia o wysokim ładunku afektywnym, łamiące normy społeczno-kulturowe.</description>
@@ -99,15 +99,22 @@
                 <relation>Dowolny fragment</relation>
                 <example>Cholera.</example>
             </tag>            
-            <tag id="7">
+            <tag id="13">
                 <name>Wyzwiska</name>
                 <tag_name>l:slurs</tag_name>
                 <description>Wulgaryzmy ad-personam. Obelgi, oszczerstwa, potwarze, szkalunki.</description>
                 <literature>Benjamin K. Bergen, What the F: What Swearing Reveals About Our Language, Our Brains, and Ourselves (Basic Books, 2016).</literature>
                 <relation>Dowolny fragment</relation>
-                <example>Cholera.</example>
+                <example>Ty cholero.</example>
             </tag>              
-            
+            <tag id="14">
+                <name>Porównanie</name>
+                <tag_name>l:simile</tag_name>
+                <description>Zestawienie dwóch rzeczy, wydarzeń, czynności.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 165 (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Jej zęby lśniły jak perły w koronie monarchy.</example>
+            </tag>                 
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
@@ -122,7 +129,7 @@
                 <name>Deiksa</name>
                 <tag_name>p:deixis</tag_name>
                 <description>Wskazanie, odwołanie do jakiegoś obiektu w czasie lub przestrzeni. Może służyć wzmocnieniu przekazu, wywołaniu kontekstu lub dyskursu.</description>
-                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 178 (Elsevier, 2009)</literature>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 127, 178 (Elsevier, 2009)</literature>
                 <relation>Słowo</relation>
                 <example>To, tamto, tu, gdzie, wtedy, ten, tamta itd.</example>
             </tag>            
@@ -144,7 +151,15 @@
                 <relation>Dowolny fragment i notatka użytkownika</relation>
                 <example>"Duszno tutaj" - ukryta prośba o otworzenie okna.</example>
             </tag>      
-            <tag id="5">
+            <tag id="6">
+                <name>Presupozycja pragmatyczna</name>
+                <tag_name>p:presuposition</tag_name>
+                <description>Implicytnia wiedza zawarta w wypowiedzi. Nie ulega negacji. Presupozycje mogą być wykorzystywane retorycznie - np. polityk może wypowiadać stwierdzenia tak jakby wszyscy się co do nich zgadzali, stwarzając pozory prawdziwości wyłącznie poprzez konstrukcję zdań.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 759 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment i notatka użytkownika</relation>
+                <example>"Chciałem tylko powiedzieć, że jestem wściekły za to że rozbiłeś samochód" (presupozycją jest fakt rozbicia samochodu, po zanegowaniu zdania ta presupozycja wciąż będzie w mocy). "Musimy zamknąć granice zanim imigranci przyjadą gwałcić nasze kobiety i rozsiewać choroby" (presuponowane przypisanie cech imigrantom)</example>
+            </tag>      
+            <tag id="7">
                 <name>Ironia</name>
                 <tag_name>p:irony</tag_name>
                 <description>Figura polegająca na dwugłosowości, dystansie do znaczenia dosłownego. Jest to wyrażanie opinii na temat tego co się właśnie wyraża (a nie przedmiotu lub sytuacji do której odnosi się wypowiedź).</description>
@@ -152,7 +167,6 @@
                 <relation>Dowolny fragment</relation>
                 <example></example>
             </tag>                     
-              
             <tag id="8">
                 <name>FTA - Akty zagrażające negatywnej twarzy</name>
                 <tag_name>p:FTA:negative</tag_name>
@@ -194,7 +208,30 @@
                 <relation>Dowolny fragment</relation>
                 <example></example>
             </tag>
-            
+            <tag id="13">
+                <name>Znaczniki dyskursu</name>
+                <tag_name>p:discmarkers</tag_name>
+                <description>Wtrącenia wytyczające granice pomiędzy jednostkami dyskursu/tematu w wypowiedzi. Są opcjonalne - ich brak nie sprawi że zdanie będzie niegramatyczne. Mogą mieć charakter propozycjonalny (wprowadzanie nowego tematu), mogą wzmacniać koherencję, a także wskazywać na istotność (lub brak istotności).</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 51 (Edinburgh University Press, 2006)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Hmm, więc, ale, och, cóż, ok, acha, spójrz, uwierz mi, zresztą, wow, dokładnie, nie jestem pewien, ponieważ, po pierwsze, w końcu, mam na myśli, wtedy etc.</example>
+            </tag> 
+            <tag id="14">
+                <name>Hedge</name>
+                <tag_name>p:hedge</tag_name>
+                <description>Wyrażenia o wymiarze pragmatycznym osłabiające przekaz. Związane ze strategiami grzeczności i twarzy.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 79 (Edinburgh University Press, 2006)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"Chciałbym na trochę zostać." (vs. chciałbym zostać); "Tak jakby się tym stresuję"; "W pewnym sensie jest nieśmiała".</example>
+            </tag>   
+            <tag id="15">
+                <name>Booster</name>
+                <tag_name>p:booster</tag_name>
+                <description>Wzmocnienia przekazu o wymiarze pragmatycznym, wzmacniające zaangażowanie. Służą grzecznośći pozytywnej.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics (Edinburgh University Press, 2006)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"BARDZO mi się to podoba"; "KONIECZNIE musimy się spotkać"</example>
+            </tag>      
         </family>
         <family name="Retoryka" color="#5e3219">
             ...
