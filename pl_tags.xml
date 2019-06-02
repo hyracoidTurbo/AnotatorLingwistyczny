@@ -219,7 +219,7 @@
             <tag id="14">
                 <name>Hedge</name>
                 <tag_name>p:hedge</tag_name>
-                <description>Wyrażenia o wymiarze pragmatycznym osłabiające przekaz. Związane ze strategiami grzeczności i twarzy.</description>
+                <description>Rodzaj intensyfikatora. Wyrażenia o wymiarze pragmatycznym osłabiające przekaz. Związane ze strategiami grzeczności i twarzy.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 79 (Edinburgh University Press, 2006)</literature>
                 <relation>Dowolny fragment</relation>
                 <example>"Chciałbym na trochę zostać." (vs. chciałbym zostać); "Tak jakby się tym stresuję"; "W pewnym sensie jest nieśmiała".</example>
@@ -227,8 +227,8 @@
             <tag id="15">
                 <name>Booster</name>
                 <tag_name>p:booster</tag_name>
-                <description>Wzmocnienia przekazu o wymiarze pragmatycznym, wzmacniające zaangażowanie. Służą grzecznośći pozytywnej.</description>
-                <literature>Alan Cruse, Glossary of Semantics and Pragmatics (Edinburgh University Press, 2006)</literature>
+                <description>Rodzaj intensyfikatora. Wzmocnienia przekazu o wymiarze pragmatycznym, wzmacniające zaangażowanie. Służą grzecznośći pozytywnej.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 89 (Edinburgh University Press, 2006)</literature>
                 <relation>Dowolny fragment</relation>
                 <example>"BARDZO mi się to podoba"; "KONIECZNIE musimy się spotkać"</example>
             </tag>      
