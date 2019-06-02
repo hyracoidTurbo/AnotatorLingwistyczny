@@ -100,7 +100,7 @@
                 <example>Cholera.</example>
             </tag>            
             <tag id="13">
-                <name>Wyzwiska</name>
+                <name>Wyzwisko</name>
                 <tag_name>l:slurs</tag_name>
                 <description>Wulgaryzmy ad-personam. Obelgi, oszczerstwa, potwarze, szkalunki.</description>
                 <literature>Benjamin K. Bergen, What the F: What Swearing Reveals About Our Language, Our Brains, and Ourselves (Basic Books, 2016).</literature>
@@ -154,7 +154,7 @@
             <tag id="4">
                 <name>Humor</name>
                 <tag_name>p:humor</tag_name>
-                <description>Żarty, komizmy, dwuznaczne aluzje, rubaszności, wypowiedzi mające na celu rozbawienie publiczności.</description>
+                <description>Żarty, komizmy, dwuznaczne aluzje, wypowiedzi mające na celu rozbawienie publiczności.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 335 (Elsevier, 2009)</literature>
                 <relation>Dowolny fragment</relation>
                 <example></example>
