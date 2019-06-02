@@ -13,7 +13,7 @@
             </tag>
             <tag id="3">
                 <name>Dialogiczność</name>
-                <tag_name>p:dialogism</tag_name>
+                <tag_name>l:dialogism</tag_name>
                 <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 181 (Elsevier, 2009)</literature>
                 <relation>Dowolny fragment</relation>
@@ -26,7 +26,88 @@
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 661 (Elsevier, 2009)</literature>
                 <relation>Dowolny fragment</relation>
                 <example></example>
-            </tag>       
+            </tag>
+            <tag id="6">
+                <name>Metafora</name>
+                <tag_name>l:metaphor</tag_name>
+                <description>Figura złożona z tematu, nośnika i motywacji (części wspólnej), wyrażająca coś za pomocą złożenia tych elementów. Może pełnić funkcję ozdobną, argumentacyjną, poznawczą, definicyjną.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 597 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Serce zadrżało mu na myśl, że świat może nie istnieć (wszedł w stan zaniepokojenia).</example>
+            </tag>     
+            <tag id="7">
+                <name>Metonimia</name>
+                <tag_name>l:metonymy</tag_name>
+                <description>Figura, poprzez którą jeden element zostaje zastąpiony drugim na mocy przyległości semantycznej. Metonimia eksploruje domeny pojęciowe i zapożycza ich elementy (transfer metonimiczny).</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 631 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Profesor dostał Nobla za odkrycia w dziedzinie agresji laboratoryjnej (nagrodę im. Alfreda Nobla). Warszawa jest ewidentnie skłócona z Brukselą (polski rząd z polityką Unii Europejskiej).(</example>
+            </tag> 
+            <tag id="7">
+                <name>Elipsa</name>
+                <tag_name>l:elipsis</tag_name>
+                <description>Niekompletne zdanie, wyrzucona część zdania (stąd nazwa "wyrzutnia"), kluczowa do jego zrozumienia. Sens elipsy ujawnia się wyłącznie w kontekście.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 54 (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example> - Jak się teraz czujesz? - Wspaniale. (zamiast - Czuję się teraz wspaniale.)</example>
+            </tag>                    
+            <tag id="7">
+                <name>Wykrzyknienie</name>
+                <tag_name>l:exclamation</tag_name>
+                <description>Wyrażenie służące do ekspresji emocji - zdziwienia, zaskoczenia, oburzenia itd. Zwykle połączone z silnym sentymentem, pozytywnym lub negatywnym.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 59 (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Co za bezczelność!</example>
+            </tag>             
+            <tag id="7">
+                <name>Hiperbola</name>
+                <tag_name>l:hyperbole</tag_name>
+                <description>Figura polegająca na przerysowaniu, wyolbrzymieniu (negatywnym lub pozytywnym).</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 80 (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Kleszcze miał wielkości karaluchów. On nigdy nie przestaje mówić. Stoimy w korku wieczność.</example>
+            </tag> 
+            <tag id="7">
+                <name>Litota</name>
+                <tag_name>l:litote</tag_name>
+                <description>Niedopowiedzenie, umniejszenie. Figura, która zaniża ilość, intensywność, powagę, moc stwierdzenia.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 186 (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"Trochę się zmęczyłem" (po maratonie).</example>
+            </tag>     
+            <tag id="7">
+                <name>Personifikacja</name>
+                <tag_name>l:personification</tag_name>
+                <description>Figura polegająca na nadaniu ludzkich cech obiektowi nieludzkiemu.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 127 (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Wulkan wściekle zagrzmiał, mściwie strzelił płomieniami.</example>
+            </tag>   
+            <tag id="7">
+                <name>Uprzedmiotowienie</name>
+                <tag_name>l:objectification</tag_name>
+                <description>Figura polegająca na odebraniu ludzkich cech osobie. Depersonifikacja, depersonalizacja, dehumanizacja.</description>
+                <literature>Alan Cruse, Glossary of Semantics and PragmaticS (Edinburgh University Press, 2006).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Oni są niczym więcej jak śmierdzącym łajnem leżącym na środku drogi.</example>
+            </tag>
+            <tag id="7">
+                <name>Wulgaryzm</name>
+                <tag_name>l:profanity</tag_name>
+                <description>Słowa i wyrażenia o wysokim ładunku afektywnym, łamiące normy społeczno-kulturowe.</description>
+                <literature>Benjamin K. Bergen, What the F: What Swearing Reveals About Our Language, Our Brains, and Ourselves (Basic Books, 2016).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Cholera.</example>
+            </tag>            
+            <tag id="7">
+                <name>Wyzwiska</name>
+                <tag_name>l:slurs</tag_name>
+                <description>Wulgaryzmy ad-personam. Obelgi, oszczerstwa, potwarze, szkalunki.</description>
+                <literature>Benjamin K. Bergen, What the F: What Swearing Reveals About Our Language, Our Brains, and Ourselves (Basic Books, 2016).</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Cholera.</example>
+            </tag>              
+            
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
@@ -71,22 +152,7 @@
                 <relation>Dowolny fragment</relation>
                 <example></example>
             </tag>                     
-            <tag id="6">
-                <name>Metafora</name>
-                <tag_name>p:metaphor</tag_name>
-                <description>Figura złożona z tematu, nośnika i motywacji (części wspólnej), wyrażająca coś za pomocą złożenia tych elementów. Może pełnić funkcję ozdobną, argumentacyjną, poznawczą, definicyjną.</description>
-                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 597 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
-                <example>Serce zadrżało mu na myśl, że świat może nie istnieć (wszedł w stan zaniepokojenia).</example>
-            </tag>     
-            <tag id="7">
-                <name>Metonimia</name>
-                <tag_name>p:metonymy</tag_name>
-                <description>Figura, poprzez którą jeden element zostaje zastąpiony drugim na mocy przyległości semantycznej. Metonimia eksploruje domeny pojęciowe i zapożycza ich elementy (transfer metonimiczny).</description>
-                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 631 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
-                <example>Profesor dostał Nobla za odkrycia w dziedzinie agresji laboratoryjnej (nagrodę im. Alfreda Nobla). Warszawa jest ewidentnie skłócona z Brukselą (polski rząd z polityką Unii Europejskiej).(</example>
-            </tag>               
+              
             <tag id="8">
                 <name>FTA - Akty zagrażające negatywnej twarzy</name>
                 <tag_name>p:FTA:negative</tag_name>
