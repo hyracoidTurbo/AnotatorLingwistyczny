@@ -154,7 +154,7 @@
             <tag id="6">
                 <name>Presupozycja pragmatyczna</name>
                 <tag_name>p:presuposition</tag_name>
-                <description>Implicytnia wiedza zawarta w wypowiedzi. Nie ulega negacji. Presupozycje mogą być wykorzystywane retorycznie - np. polityk może wypowiadać stwierdzenia tak jakby wszyscy się co do nich zgadzali, stwarzając pozory prawdziwości wyłącznie poprzez konstrukcję zdań.</description>
+                <description>Implicytna wiedza zawarta w wypowiedzi. Nie ulega negacji. Presupozycje mogą być wykorzystywane retorycznie - np. polityk może wypowiadać stwierdzenia tak jakby wszyscy się co do nich zgadzali, stwarzając pozory prawdziwości wyłącznie poprzez konstrukcję zdań.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 759 (Elsevier, 2009)</literature>
                 <relation>Dowolny fragment i notatka użytkownika</relation>
                 <example>"Chciałem tylko powiedzieć, że jestem wściekły za to że rozbiłeś samochód" (presupozycją jest fakt rozbicia samochodu, po zanegowaniu zdania ta presupozycja wciąż będzie w mocy). "Musimy zamknąć granice zanim imigranci przyjadą gwałcić nasze kobiety i rozsiewać choroby" (presuponowane przypisanie cech imigrantom)</example>
@@ -184,12 +184,12 @@
                 <example></example>
             </tag>   
             <tag id="10">
-                <name>Akty zagrażające własnej twarzy</name>
+                <name>FTA - Akty zagrażające własnej twarzy</name>
                 <tag_name>p:FTA:self</tag_name>
                 <description>Akty autodeprecjacji.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use (Psychology Press, 2013)</literature>
                 <relation>Dowolny fragment</relation>
-                <example></example>
+                <example>"Mógłbym zrobić tę prezentację, ale haha, naprawdę jestem niezbyt dobry z fizyki"</example>
             </tag>   
             <tag id="11">
                 <name>Grzeczność pozytywna</name>
@@ -232,6 +232,29 @@
                 <relation>Dowolny fragment</relation>
                 <example>"BARDZO mi się to podoba"; "KONIECZNIE musimy się spotkać"</example>
             </tag>      
+            <tag id="16">
+                <name>Temat</name>
+                <tag_name>p:topic</tag_name>
+                <description>Temat dyskursu to informacja, która stanowi punkt wyjścia dla wypowiedzi, to co zazwyczaj w wypowiedzi już znane, gotowe, wcześniej przywoływane, wspólna część wiedzy pomiędzy nadawcą i odbiorcą.</description>
+                <literature>Tomlin R.S. i in., Semantyka dyskursu (Tematyczna i rematyczna organizacja dyskursu), w: T. A. van Dijk (red.), Dyskurs jako struktura i proces, Warszawa 2001: Wydawnictwo Naukowe PWN, s. 61-84.</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"Jan (Temat) kupił parasol (Remat). Kupiony przez Jana parasol (Temat) był tani, ale wytrzymały (Remat)"</example>
+            </tag> 
+            <tag id="17">
+                <name>Remat</name>
+                <tag_name>p:focus</tag_name>
+                <description>Część informacyjna wypowiedzi, to czego odbiorca powinien się dowiedzieć. Zwykle po orzeczeniu.</description>
+                <literature>Tomlin R.S. i in., Semantyka dyskursu (Tematyczna i rematyczna organizacja dyskursu), w: T. A. van Dijk (red.), Dyskurs jako struktura i proces, Warszawa 2001: Wydawnictwo Naukowe PWN, s. 61-84.</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"Jan (Temat) kupił parasol (Remat). Kupiony przez Jana parasol (Temat) był tani, ale wytrzymały (Remat)"</example>
+            </tag> 
+            <tag id="18">
+                <name>Gry słowne</name>
+                <tag_name>p:pun</tag_name>
+                <description>Kalambur, gra słowna, suchar. Konstrukcja wykorzystująca właściwości struktury semantycznej i podobnego brzmienia słów, do stworzenia żartu. Może być amalgamatem kognitywnym.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 148 (Edinburgh University Press, 2006)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"A life in politics is full of parties"</example>
         </family>
         <family name="Retoryka" color="#5e3219">
             ...
