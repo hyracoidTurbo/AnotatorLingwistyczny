@@ -119,7 +119,7 @@
                 <name>Modalność epistemiczna</name>
                 <tag_name>l:modal:epistemic</tag_name>
                 <description>Czasowniki odpowiadające za wiedzę, poznanie, przekonania, percepcję</description>
-                <literature></literature>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 109 (Edinburgh University Press, 2006).</literature>
                 <relation>Dowolny fragment</relation>
                 <example>Czuć; widzieć; słyszeć; myśleć; chcieć; wiedzieć; verba sentiendi</example>
             </tag>    
@@ -127,7 +127,7 @@
                 <name>Modalność deontyczna</name>
                 <tag_name>l:modal:deontic</tag_name>
                 <description>Czasowniki odpowiadające za powinność, zobligowanie, poświęcenie, pozwolenie. Lub inne formy gramatyczne realizujące modalność</description>
-                <literature></literature>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 109 (Edinburgh University Press, 2006).</literature>
                 <relation>Dowolny fragment</relation>
                 <example>Musieć; "możesz skończyć", "będziesz nagrodzony"</example>
             </tag>                 
