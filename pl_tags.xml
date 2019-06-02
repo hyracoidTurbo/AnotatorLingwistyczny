@@ -270,10 +270,66 @@
                 <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. Wspólnota: warszawiacy; ślązacy</example>
             </tag>
+            <tag id="4">
+                <name>Umocowanie</name>
+                <tag_name>sl:footing</tag_name>
+                <description>Umocowanie - footing, jest pozycją zajmowaną w konwersacji. Osoba może przyjmować różne pozycje - style konwersacyjne w zależności od kontekstu, odbiorcy. Te pozycje mogą być instytucjonalne, interakcyjne, socjokulturowe. Nadawcy są tu rozumiani jako aktorzy społeczni.</description>
+                <literature>Natalie Schilling and Scott Kiesling, ‘Language Style as Identity Construction: A Footing and Framing Approach’.</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>Przyjęta postawa: matka; dyrektorka; klientka.</example>
+            </tag>
+            
             
         </family>
         <family name="Analiza Dyskursu" color="#6D7B8D">
-        ...
+            <tag id="1">
+                <name>Obszar działania</name>
+                <tag_name>kad:field</tag_name>
+                <description>Obszar funkcjonowania dyskursu. Np. w przypadku partii politycznej może to być poziom konstruowania prawa, poziom PR, poziom wewnętrznej komunikacji partyjnej, reklama, poziom administracji, obszar poza kontrolą (np. działania partii opozycyjnych).</description>
+                <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example></example>
+            </tag>
+            <tag id="2">
+                <name>Gatunek tekstu</name>
+                <tag_name>kad:genre</tag_name>
+                <description>Gatunek realizowany wewnątrz obszaru działania. Np. wywiad telewizyjny wewnątrz obszaru PR, bilboard wewnątrz obszaru reklamy</description>
+                <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example></example>
+            </tag> 
+            <tag id="3">
+                <name>Temat dyskursu</name>
+                <tag_name>kad:topic</tag_name>
+                <description>Temat realizowany poprzez gatunek.</description>
+                <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>Np. dyskurs imigracji w gatunku konferencji prasowej w obszarze PR</example>
+            </tag>            
+            <tag id="4">
+                <name>Przenośnie (artefakt)</name>
+                <tag_name>kad:metaphor</tag_name>
+                <description>Artefakt językowy. Zamrożone metafory. Metafory rozumiane jako narzędzie rozpowszechniania ideologii, obrazowania zmiany, kształtowania znaczenia. Redukują niepewność spotkania z nowością.</description>
+                <literature>Czarniawska B., Słowa, czyny i kontrola, w: taż, Trochę inna teoria organizacji. Organizowanie jako konstrukcja sieci działań, Warszawa 2010</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>"Centralne urzędy gminy stały się 'cmentarzami dinozaurów'"; "Czas tchnąć nowe życie w zamierające organizacje polityczne"</example>
+            </tag>                 
+            <tag id="5">
+                <name>Etykiety</name>
+                <tag_name>kad:labels</tag_name>
+                <description>Artefakt językowy. Poprzez nadanie nazwy konstruuje się rzeczywistość - etykiety noszą ze sobą instrukcje działania, nadają znaczenie, usuwają niejednoznaczności.</description>
+                <literature>Czarniawska B., Słowa, czyny i kontrola, w: taż, Trochę inna teoria organizacji. Organizowanie jako konstrukcja sieci działań, Warszawa 2010</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>Np. reforma szwedzkich gmin w latach osiemdziesiątych była etykietowana jako "koszt" lub jako "decentralizacja" - z różnymi konsekwencjami dla postrzegania reformy.</example>
+            </tag>     
+            <tag id="6">
+                <name>Banały</name>
+                <tag_name>kad:banalities</tag_name>
+                <description>Artefakt językowy. Martwa metafory. Oczywiste oczywistości. Służą wzmacnianiu przekonań, neutralizacji krytyki i konfliktów. Są przeciwieństwem ironii.</description>
+                <literature>Czarniawska B., Słowa, czyny i kontrola, w: taż, Trochę inna teoria organizacji. Organizowanie jako konstrukcja sieci działań, Warszawa 2010</literature>
+                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <example>"Demokracja wymaga czasu"; "Trzeba skrócić linię między decyzją a jej wykonaniem"; "Osoby podejmujące decyzje muszą dobrze znać rzeczywistość"</example>
+            </tag>                 
         </family>
         <family name="Rodzina Użytkownika" color="#625D5D">
         ...
