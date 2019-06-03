@@ -151,7 +151,7 @@
                 <tag_name>l:oratio:FIS</tag_name>
                 <description>Forma pośrednia pomiędzy mową zależną i niezależną. Wykorzystywana w narracji do przedstawienia wypowiedzi lub myśli i doznań bohaterów, jednak za pomocą swoich słów.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 861 (Elsevier, 2009); Cerquiglini, B., ‘Mowa Pozornie Zależna i Nowoczesność’, Pamiętnik Literacki: czasopismo kwartalne poświęcone historii i krytyce literatury polskiej, 1990, 337–48.</literature>
-                <relationn type="base">Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"Och, wspomnienia, wspomnienia raju, które sam jednym uderzeniem na zawsze zniweczył! Wspomnienia wieczoru w obcym mieści, kiedy w hotelu zastukał do drzwi numeru". "Ona  skupiła  wszelką  moc  w  sobie, Raczej  na  pęta  gotowa  srogie, Niżby  dziewictwo  cenne  postradać.", "Wczoraj  dzwonił  do  mnie  Paweł.  Był  bardzo  załamany  i  prosił  mnie  o  pomoc.Czyż  mogłem  się  z  nim  spotkać?", "Nakazał  wtrącić  odźwiernego  do  ciemnicy,  dodając,  że  zapłaci  za  brak posłuszeństwa"</example>
             </tag>
             <tag id="17">
