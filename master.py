@@ -30,7 +30,7 @@ class annotatorApp(tk.Tk):
         
         self.currentFamily = ''
 
-        self.root = lxml.etree.Element("root")
+        self.root = lxml.etree.Element("root")\
         lxml.etree.SubElement(self.root, "head")
         lxml.etree.SubElement(self.root, "tags")
         lxml.etree.SubElement(self.root, "fulltext")
@@ -53,7 +53,7 @@ class annotatorApp(tk.Tk):
             for j in range(len(self.tagNameList)):
                 self.tagList.insert(j, self.tagNameList[j])
             self.tagList.grid(row=1, column = 2, sticky = "wn")
-            self.tagList.bind("<Double-Button-1>", self.test_callback)
+            self.tagList.bind("<Double-Button-1>", self.taglist_callback)
         
         
         button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.annotate(self.tagList.get(self.tagList.curselection()), \
@@ -83,7 +83,7 @@ class annotatorApp(tk.Tk):
 #        return
     
 
-    def test_callback(self, event):
+    def taglist_callback(self, event):
         if(self.family):
             self.family=False
             name = self.tagList.get(self.tagList.curselection())
