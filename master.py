@@ -44,6 +44,10 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.grid(sticky ="nswe", column=1, row =1)
         self.textBoxAnn.config(state="disabled")
         
+        self.opisBox = tk.Text(wrap="word")
+        self.opisBox.grid(sticky ="nswe", column = 0, row = 2)
+        self.opisBox.config(state = "disabled")
+        
         self.family=True
         self.tags = ET.parse(self.setting.get(self.language,'tag_set_path')) 
         if  self.tags.find('family') is not None:
@@ -102,7 +106,13 @@ class annotatorApp(tk.Tk):
                 for j in range(len(self.tagNameList)):
                     self.tagList.insert(j, self.tagNameList[j])
             else:
-                print(self.tagList.get(self.tagList.curselection()))     
+                self.opisBox.config(state = "normal")
+                opis = self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/description').text
+                opis += "\n"
+                opis += self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/literature').text
+                self.opisBox.delete('1.0', "end")
+                self.opisBox.insert(tk.END, opis)
+                self.opisBox.config(state = "disabled")   
 
     def save_file(self, root):
         f = filedialog.asksaveasfile(mode='a', defaultextension=".xml")
