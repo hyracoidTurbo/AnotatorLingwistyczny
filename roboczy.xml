@@ -1,0 +1,8 @@
+            <tag id="1">
+                <name>Zdanie kontrfaktyczne warunkowe</name>
+                <tag_name>l:counterfactual</tag_name>
+                <description>Zdanie rozważające konsekwencje hipotetycznego zdarzenia </description>
+                <literature></literature>
+                <relation type="base">Cała fraza</relation>
+                <example></example>
+            </tag>
