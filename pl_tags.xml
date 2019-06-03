@@ -169,7 +169,7 @@
                 <tag_name>p:reflexivity</tag_name>
                 <description>Na poziomie lingwistycznym użycie zaimków takich jak się, siebie, mnie. Na poziomie pragmatycznym jest to odwołanie do samego siebie, deiksa do własnej osoby, wskazanie na kontekst wynikający z pierwszej osoby.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 846 (Elsevier, 2009)</literature>
-                <relation>Słowo</relation>
+                <relation type="base">Słowo</relation>
                 <example>"Widzę się w tej sytuacji."</example>
             </tag>            
             <tag id="2">

@@ -30,7 +30,7 @@ class annotatorApp(tk.Tk):
         
         self.currentFamily = ''
 
-        self.root = lxml.etree.Element("root")\
+        self.root = lxml.etree.Element("root")
         lxml.etree.SubElement(self.root, "head")
         lxml.etree.SubElement(self.root, "tags")
         lxml.etree.SubElement(self.root, "fulltext")
@@ -103,14 +103,20 @@ class annotatorApp(tk.Tk):
                     self.tagList.insert(j, self.tagNameList[j])
             else:
                 print(self.tagList.get(self.tagList.curselection()))
-            
+    def prettify(self, elem):
+        rough_string = lxml.etree.ElementTree.tostring(elem, 'utf-8')
+        reparsed = lxml.etree.minidom.parseString(rough_string)
+        return reparsed.toprettyxml(indent="\t")        
 
     def save_file(self, root):
+        f = filedialog.asksaveasfile(mode='a', defaultextension=".xml")
+        if f is None: 
+            return
         if root.find('./head/tag') is not None:
             tree = lxml.etree.ElementTree()
             tree._setroot(root)
-            tree.write("sample.xml")
-        print(lxml.etree.tostring (root, pretty_print = True))  
+            self.prettify(tree).write(f.name)
+            
   
     def load_file(self, wordList):
         
@@ -203,8 +209,8 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.config(state="disabled")
         
 
-    def annotate_base(self, tag, tag_name):
-    
+    def annotate_base(self, tag, tag_name, comment=''):
+        
         selectionStart = self.textBoxMain.index("sel.first")
         selectionEnd = self.textBoxMain.index("sel.last")    
         selectionStartIdx = 0
@@ -246,17 +252,20 @@ class annotatorApp(tk.Tk):
         
         etag = lxml.etree.Element("tag") 
         etag.text = self.textBoxMain.selection_get()
+        if comment:
+            etag.attrib["comment"]=comment
         etag.attrib["name"]=tag
         etag.attrib['tag_name']=tag_name
         etag.attrib["beginning"]=str(selectionStartIdx)
         etag.attrib["end"]=str(selectionEndIdx)
         etag.attrib["lenght"]=str(selectionEndIdx-selectionStartIdx)
         self.root.find("./tags").append(etag) 
-    
-    def annotate_note(self, tag, tag_name ):
-        pass
 
-    
+    def annotate_note(self, tag, tag_name ):
+        w=popupWindow(self,self.setting.get(self.language,'comment'))
+        self.wait_window(w.top)
+        self.annotate_base(tag, tag_name, w.value)
+
     def annotate(self, tag, tag_name, tag_type):
         if tag_type is None or tag is None:
             return
@@ -269,6 +278,20 @@ class annotatorApp(tk.Tk):
         func = switcher.get(tag_type, lambda y,x: print("Invalid type"))
         func(tag, tag_name)
 
+
+
+class popupWindow(object):
+    def __init__(self,master, lable):
+        top=self.top=tk.Toplevel(master)
+        self.l=tk.Label(top,text=lable)
+        self.l.pack()
+        self.e=tk.Entry(top, width=20)
+        self.e.pack()
+        self.b=tk.Button(top,text='Ok',command=self.cleanup)
+        self.b.pack()
+    def cleanup(self):
+        self.value=self.e.get()
+        self.top.destroy()
       
 app = annotatorApp()
 app.mainloop()
