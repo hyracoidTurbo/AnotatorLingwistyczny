@@ -311,7 +311,46 @@
             </tag>
         </family>
         <family name="Retoryka" color="#5e3219">
-            ...
+            <tag id="1">
+                <name>Sylogizm - przesłanka większa</name>
+                <tag_name>r:syllogism:major</tag_name>
+                <description></description>
+                <literature>Agnieszka Budzyńska-Daca, Maria Barłowska, Maria Załęska, Ćwiczenia z retoryki (Wydawnictwo Naukowe PWN, 2010).</literature>
+                <relation type="base">Cała fraza</relation>
+                <example>Wszyscy ludzie są śmiertelni</example>
+            </tag>
+            <tag id="2">
+                <name>Sylogizm - przesłanka mniejsza</name>
+                <tag_name>r:syllogism:minor</tag_name>
+                <description></description>
+                <literature>Agnieszka Budzyńska-Daca, Maria Barłowska, Maria Załęska, Ćwiczenia z retoryki (Wydawnictwo Naukowe PWN, 2010).</literature>
+                <relation type="base">Cała fraza</relation>
+                <example>Sokrates jest człowiekiem</example>
+            </tag>
+            <tag id="3">
+                <name>Sylogizm - konkluzja</name>
+                <tag_name>r:syllogism:conclusion</tag_name>
+                <description></description>
+                <literature>Agnieszka Budzyńska-Daca, Maria Barłowska, Maria Załęska, Ćwiczenia z retoryki (Wydawnictwo Naukowe PWN, 2010).</literature>
+                <relation type="base">Cała fraza</relation>
+                <example>Sokrates jest śmiertelny</example>
+            </tag>
+            <tag id="4">
+                <name>Entymemat</name>
+                <tag_name>r:enthymeme</tag_name>
+                <description>Niepełny/skrócony sylogizm. Najczęściej pozbawiony przesłanki większej, ale brakować może także wniosek lub przesłanka mniejsza.</description>
+                <literature>Agnieszka Budzyńska-Daca, Maria Barłowska, Maria Załęska, Ćwiczenia z retoryki (Wydawnictwo Naukowe PWN, 2010).</literature>
+                <relation type="base">Cała fraza</relation>
+                <example>Sokrates jest śmiertelny, ponieważ jest człowiekiem. Kandyd jest typową francuską powieścią, jest więc wulgarny.</example>
+            </tag>
+            <tag id="5">
+                <name>Sofizmat</name>
+                <tag_name>r:sophisme</tag_name>
+                <description>Błędnie skonstruowany sylogizm, zwodniczy, fałszywy. Sylogizm erystyczny.</description>
+                <literature>Agnieszka Budzyńska-Daca, Maria Barłowska, Maria Załęska, Ćwiczenia z retoryki (Wydawnictwo Naukowe PWN, 2010).</literature>
+                <relation type="base">Cała fraza</relation>
+                <example>Grek Simonides powiedział, że wszyscy Grecy kłamią. A zatem jeśli prawdą jest, że Grekiem jest Simonides i wszyscy Grecy kłamią, to Simonides skłamał, a skoro skłamał, to nieprawdziwe jest przytoczone twierdzenie. </example>
+            </tag>
         </family>
         <family name="Socjolingwistyka" color="#357EC7">
             <tag id="1">
