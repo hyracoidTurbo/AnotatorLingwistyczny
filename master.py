@@ -21,15 +21,15 @@ class annotatorApp(tk.Tk):
     
     def __init__(self, *args, **kwargs):
         
-        setting = ConfigParser()
-        setting.read('config.ini')
-        language=setting.get('general','language')
+        self.setting = ConfigParser()
+        self.setting.read('config.ini')
+        self.language=self.setting.get('general','language')
         tk.Tk.__init__(self, *args, **kwargs)
         self.geometry("800x500+20+20")    
         self.grid()
         
-
         
+
         self.root = lxml.etree.Element("root")
         lxml.etree.SubElement(self.root, "head")
         lxml.etree.SubElement(self.root, "tags")
@@ -43,27 +43,28 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.grid(sticky ="nswe", column=1, row =1)
         self.textBoxAnn.config(state="disabled")
         
-        tags = ET.parse(setting.get(language,'tag_set_path'))
-        if tags.find('tag/name') is not None:
-            names = [events.text for events in tags.findall('tag/name')]
-        self.tagNameList = names
-
-        self.tagList = tk.Listbox(width = 20, selectmode = "SINGLE", exportselection= False)
-        for j in range(len(self.tagNameList)):
-            self.tagList.insert(j, self.tagNameList[j])
-            
-        self.tagList.grid(row=1, column = 2, sticky = "wn")
+        self.family=True
+        self.tags = ET.parse(self.setting.get(self.language,'tag_set_path')) 
+        if  self.tags.find('family') is not None:
+            names = [events.attrib['name'] for events in  self.tags.findall('family')]
+            self.tagNameList = names
+            self.tagList = tk.Listbox(width = 20, selectmode = "SINGLE", exportselection= False)
+            for j in range(len(self.tagNameList)):
+                self.tagList.insert(j, self.tagNameList[j])
+            self.tagList.grid(row=1, column = 2, sticky = "wn")
+            self.tagList.bind("<Double-Button-1>", self.test_callback)
         
-        button_newAnn = tk.Button(text = setting.get(language,'new_annotation') , command = lambda: self.new_annatation())
+        
+        button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.new_annatation())
         button_newAnn.grid(row=2, column = 2)
         
         menuBar = tk.Menu(self)   
         menuFile = tk.Menu(menuBar, tearoff = 0)
  #       menulanguage = tk.Menu(menuBar, tearoff = 1)
 
-        menuBar.add_cascade(label =setting.get(language,'file'), menu = menuFile)
-        menuFile.add_command(label=setting.get(language,'load'), command = lambda: self.load_file(self.wordList))
-        menuFile.add_command(label=setting.get(language,'save'), command = lambda: self.save_file(self.root))      
+        menuBar.add_cascade(label =self.setting.get(self.language,'file'), menu = menuFile)
+        menuFile.add_command(label=self.setting.get(self.language,'load'), command = lambda: self.load_file(self.wordList))
+        menuFile.add_command(label=self.setting.get(self.language,'save'), command = lambda: self.save_file(self.root))      
     
 # Jakbyśmy chcieli się powbawić w zmanę języka
 #        menuBar.add_cascade(label = setting.get(language,'language') ,menu = menulanguage )
@@ -76,6 +77,27 @@ class annotatorApp(tk.Tk):
         self.config(menu = menuBar)
 #    def change_language(self, key):
 #        return
+    def test_callback(self, event):
+        if(self.family):
+            self.family=False
+            name = self.tagList.get(self.tagList.curselection())
+            self.tagList.delete(0,'end')
+            self.tagList.insert(0,self.setting.get(self.language,'back'))
+            if self.tags.find('family[@name="'+ name +'"]/tag') is not None:
+                names = [events for events in self.tags.findall('family[@name="'+ name +'"]/tag/name')]
+                for j in range(len(names)):
+                    self.tagList.insert(j+1, names[j].text)
+            
+        else:
+            if self.tagList.curselection()[0]==0:
+                self.family=True
+                self.tagList.delete(0,'end')
+                for j in range(len(self.tagNameList)):
+                    self.tagList.insert(j, self.tagNameList[j])
+            else:
+                print(self.tagList.get(self.tagList.curselection()))
+            
+
     def save_file(self, root):
         if root.find('./head/tag') is not None:
             tree = lxml.etree.ElementTree()
@@ -173,86 +195,6 @@ class annotatorApp(tk.Tk):
         self.textBoxMain.config(state="disabled")
         self.textBoxAnn.config(state="disabled")
         
-    def new_annatation(self, *args):
-        print(self.tagList.curselection())
-
-  #      selectedText = self.textBoxMain.selection_get()
-        
-        selectionStart = self.textBoxMain.index("sel.first")
-        selectionEnd = self.textBoxMain.index("sel.last")
-        print("text:" + str(self.textBoxMain.selection_get()))
-        print("SelStart:" + str(selectionStart))
-        print("SelEnd:" + str(selectionEnd))
-        
-        
-        rowLenList = []
-        with open(self.textDir) as f:
-            for row in f:
-               rowLenList.append(len(row)) 
-        
-       
-        selectionStartIdx = 0
-
-        for row in range(int(selectionStart[0])):
-            if row == int(selectionStart[0]) - 1:
-                selectionStartIdx += int(selectionStart[2:])
-            else:
-                selectionStartIdx += rowLenList[row]
-            
-        print("selectionStartIdx "+ str(selectionStartIdx))
-                
-        
-        
-        
-        
-        selectionEndIdx = 0
-        
-        for row in range(int(selectionEnd[0])):
-            if row == int(selectionEnd[0]) - 1:
-                selectionEndIdx += int(selectionEnd[2:])
-            else:
-                selectionEndIdx += rowLenList[row]
-                
-        selectionEndIdx -= 1
-        
-        
-        
-        print("selectionEndIdx "+ str(selectionEndIdx))
-     
-       
-        startFound = 0
-        lookAtWord = 0
-        while startFound == 0:   
-            if selectionStartIdx >= self.wordList2[lookAtWord][1] and selectionStartIdx <= self.wordList2[lookAtWord][2]:
-                print(self.wordList2[lookAtWord][0])
-                startFound = 1
-            lookAtWord += 1
-            
-        endFound = 0
-        lookAtWord = 0
-        while endFound == 0:   
-            if selectionEndIdx >= self.wordList2[lookAtWord][1] and selectionEndIdx <= self.wordList2[lookAtWord][2]:
-                print(self.wordList2[lookAtWord][0])
-                endFound = 1
-         #   if 
-            lookAtWord += 1
-                
-                
-     #   self.text.tag_add("sel", "1.7", "1.12")
-      #  self.text.focus_force()
-        
-
-        
-        
-        
-        
-    
-        
-        #bierze wybraną annotację z listy tagów
-          #  s = self.tagList.get(self.tagList.curselection())
-
-   #     self.textBoxMain.tag_add("one", "1.0", "1.0 wordend")
-    #    self.textBoxMain.tag_config("one", foreground="red")
 
     def annotate_base(self, tag):
     

@@ -46,7 +46,7 @@
                 <example>To, tamto, tu, gdzie, wtedy, ten, tamta itd.</example>
             </tag>            
 
-            </tag>            
+                      
             <tag id="4">
                 <name>Humor</name>
                 <tag_name>p:humor</tag_name>
@@ -178,4 +178,4 @@
     
 </tagset>
 
-<!--To jest komentarz -- >
+<!--To jest komentarz -->
