@@ -134,6 +134,7 @@ class annotatorApp(tk.Tk):
                 for j in range(len(self.tagNameList)):
                     self.tagList.insert(j, self.tagNameList[j])
             else:
+                self.displey_tag(self.tagList.get(self.tagList.curselection()))
                 self.opisBox.config(state = "normal")
                 opis = self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/description').text
                 opis += "\n"
@@ -273,7 +274,7 @@ class annotatorApp(tk.Tk):
     def annotate_base(self, tag, tag_name, comment=''):
         
         index = self.get_selected()
-        self.textBoxMain.tag_add(tag_name,index[2], index[3])
+        self.textBoxMain.tag_add(tag_name, index[2], index[3])
         self.textBoxMain.tag_config(tag_name, underline=1 )
         #dodaję do meta danych inforacje o utworzeniu taga
         if self.root.find('./head/tag[@name="'+tag+'"]') is None:
