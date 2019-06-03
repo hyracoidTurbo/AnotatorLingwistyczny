@@ -162,6 +162,14 @@
                 <relation type="base">Cała fraza</relation>
                 <example>"Gdyby bezrobotni nie byli leniwi, to pozakładaliby firmy i przestali być biedni."</example>
             </tag>
+            <tag id="18">
+                <name>Synekdocha</name>
+                <tag_name>l:synecdoche</tag_name>
+                <description>Figura polegająca na reprezentowaniu czegoś terminem semantycznie szerszym lub węższym. Rodzaj metonimii.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 888 (Elsevier, 2009)</literature>
+                <relation type="base">Cała fraza</relation>
+                <example>Pars pro toto: Hitler [przywódca Rzeszy - Rzesza została pokonana] został pokonany. Singularis pro plurali: Polak jest leniwy [cechą Polaków jest leniwość]. Species pro genus: Jan nie ma grosza przy duszy [Jan nie ma pieniędzy].</example>
+            </tag>
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
