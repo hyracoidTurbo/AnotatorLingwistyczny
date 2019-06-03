@@ -2,6 +2,7 @@
 
 
 import tkinter as tk
+from tkinter import font
 import csv
 from tkinter import filedialog
 import re
@@ -35,7 +36,7 @@ class annotatorApp(tk.Tk):
         lxml.etree.SubElement(self.root, "tags")
         lxml.etree.SubElement(self.root, "fulltext")
         
-
+    
         self.textBoxMain = tk.Text()
         self.textBoxMain.grid(sticky ="nswe", column=0, row =1)
         self.textBoxMain.config(state="disabled")
@@ -43,6 +44,7 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn = tk.Text(width = 8)
         self.textBoxAnn.grid(sticky ="nswe", column=1, row =1)
         self.textBoxAnn.config(state="disabled")
+        
         
         self.family=True
         self.tags = ET.parse(self.setting.get(self.language,'tag_set_path')) 
@@ -55,7 +57,9 @@ class annotatorApp(tk.Tk):
             self.tagList.grid(row=1, column = 2, sticky = "wn")
             self.tagList.bind("<Double-Button-1>", self.taglist_callback)
         
-        
+        self.opisBox = tk.Text(wrap="word")
+        self.opisBox.grid(sticky ="nswe", column = 0, row = 2)
+        self.opisBox.config(state = "disabled")
         button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.annotate(self.tagList.get(self.tagList.curselection()), \
         self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/tag_name').text, \
         self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/relation').attrib['type']))
@@ -79,9 +83,34 @@ class annotatorApp(tk.Tk):
        
        
         self.config(menu = menuBar)
+        self.bind("<Delete>", lambda event: self.deletetag())
 #    def change_language(self, key):
 #        return
-    
+    def deletetag(self):
+        if self.family or self.root.find('./head/tag[@name="'+self.tagList.get(self.tagList.curselection())+'"]') is None:
+            return
+        index = self.get_selected()
+        self.textBoxMain.tag_remove(self.tags.find('family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection())+'"]/tag_name').text,index[2],index[3])
+        listOfEle= []
+       
+        for element in self.root.findall('./tags/tag[@name="'+self.tagList.get(self.tagList.curselection())+'"]'):
+           if int(element.attrib['beginning'])<=index[0]:
+               listOfEle.append(element)
+        for tag in listOfEle:
+            if int(tag.attrib['end'])>=index[1]:
+                self.root.find('./tags').remove(tag)
+                if int(self.root.find('./head/tag[@name="'+self.tagList.get(self.tagList.curselection())+'"]').attrib["amount"]) > 1:
+                    self.root.find('./head/tag[@name="'+self.tagList.get(self.tagList.curselection())+'"]').attrib["amount"]=str(int(self.root.find('./head/tag[@name="'+self.tagList.get(self.tagList.curselection())+'"]').attrib["amount"])-1)
+                else:
+                    self.root.find('./head').remove(self.root.find('./head/tag[@name="'+self.tagList.get(self.tagList.curselection())+'"]'))
+        
+        
+    def displey_tag(self,tag):
+        for name in self.textBoxMain.tag_names():
+            self.textBoxMain.tag_config(name , underline=0)
+        self.textBoxMain.tag_config(self.tags.find('family[@name="'+ self.currentFamily +'"]/tag[name="'+tag+'"]/tag_name').text, underline=1)
+            
+
 
     def taglist_callback(self, event):
         if(self.family):
@@ -102,7 +131,15 @@ class annotatorApp(tk.Tk):
                 for j in range(len(self.tagNameList)):
                     self.tagList.insert(j, self.tagNameList[j])
             else:
-                print(self.tagList.get(self.tagList.curselection()))     
+                self.displey_tag(self.tagList.get(self.tagList.curselection()))
+                self.opisBox.config(state = "normal")
+                opis = self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/description').text
+                opis += "\n"
+                opis += self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/literature').text
+                self.opisBox.delete('1.0', "end")
+                self.opisBox.insert(tk.END, opis)
+                self.opisBox.config(state = "disabled")      
+
 
     def save_file(self, root):
         f = filedialog.asksaveasfile(mode='a', defaultextension=".xml")
@@ -203,9 +240,8 @@ class annotatorApp(tk.Tk):
             
         self.textBoxMain.config(state="disabled")
         self.textBoxAnn.config(state="disabled")
-        
-
-    def annotate_base(self, tag, tag_name, comment=''):
+    
+    def get_selected(self):
         
         selectionStart = self.textBoxMain.index("sel.first")
         selectionEnd = self.textBoxMain.index("sel.last")    
@@ -219,9 +255,6 @@ class annotatorApp(tk.Tk):
                 selectionStartIdx += int(selectionStart[2:])
             else:
                 selectionStartIdx += rowLenList[row]
-            
-        print("selectionStartIdx "+ str(selectionStartIdx))
-                      
         
         selectionEndIdx = 0
         
@@ -232,9 +265,15 @@ class annotatorApp(tk.Tk):
                 selectionEndIdx += rowLenList[row]
                 
         selectionEndIdx -= 1
-            
-        print("selectionEndIdx "+ str(selectionEndIdx))   
+        index = [selectionStartIdx, selectionEndIdx, selectionStart,selectionEnd ]
+        return index
+       
 
+    def annotate_base(self, tag, tag_name, comment=''):
+        
+        index = self.get_selected()
+        self.textBoxMain.tag_add(tag_name,index[2], index[3])
+        self.textBoxMain.tag_config(tag_name, underline=1 )
         #dodaję do meta danych inforacje o utworzeniu taga
         if self.root.find('./head/tag[@name="'+tag+'"]') is None:
             mtag = lxml.etree.Element("tag") 
@@ -252,9 +291,9 @@ class annotatorApp(tk.Tk):
             etag.attrib["comment"]=comment
         etag.attrib["name"]=tag
         etag.attrib['tag_name']=tag_name
-        etag.attrib["beginning"]=str(selectionStartIdx)
-        etag.attrib["end"]=str(selectionEndIdx)
-        etag.attrib["lenght"]=str(selectionEndIdx-selectionStartIdx)
+        etag.attrib["beginning"]=str(index[0])
+        etag.attrib["end"]=str(index[1])
+        etag.attrib["lenght"]=str(index[1]-index[0])
         self.root.find("./tags").append(etag) 
 
     def annotate_note(self, tag, tag_name ):
@@ -288,6 +327,9 @@ class popupWindow(object):
     def cleanup(self):
         self.value=self.e.get()
         self.top.destroy()
-      
+
+
+
+
 app = annotatorApp()
 app.mainloop()
