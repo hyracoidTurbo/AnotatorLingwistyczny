@@ -377,7 +377,71 @@
                 <description>Charakterystyczny rejestr wyróżniający dany tekst/wypowiedź. Użytkownik opisuje rodzaj rejestru.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
                 <relation type="note">Dowolny fragment i notatka użytkownika</relation>
-                <example>Rejestr: klasa średnia</example>
+                <example>Rejestr: mieszany - wywiad telewizyjny</example>
+            </tag> 
+            <tag id="9">
+                <name>Socjolekt</name>
+                <tag_name>sl:sociolect</tag_name>
+                <description>Charakterystyczny styl komunikacji związany z klasą społeczną.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 983 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Np. Sociolekt: klasa średnia</example>
+            </tag>    
+            <tag id="10">
+                <name>Idiolekt</name>
+                <tag_name>sl:idiolect</tag_name>
+                <description>Charakterystyczny styl komunikacji właściwy jednej osobie (lub instytucji).</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s.  (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Idiolekt: Donald Tusk; Idiolekt: Margaret Thatcher</example>
+            </tag>  
+            <tag id="11">
+                <name>Konwergencja</name>
+                <tag_name>sl:convergence</tag_name>
+                <description>Sytuacja komunikacyjna, w której nadawca dostosowuje swój styl mówienia do wyższego rejestru słuchacza. Część teorii akomodacji komunikacji.</description>
+                <literature>Howard Giles, Philip Smith. 'Accommodation theory: Optimal levels of convergence'. s. 45-65; Mey, J. L., Concise Encyclopedia of Pragmatics, s. 992 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Petent w urzędzie skarbowym używający poważnego urzędowego słownictwa.</example>
+            </tag>  
+            <tag id="12">
+                <name>Dywergencja</name>
+                <tag_name>sl:divergence</tag_name>
+                <description>Sytuacja komunikacyjna, w której nadawca o wyższym rejestrze dostosowuje swój styl do nadawcy posługującego się niższym rejestrem.</description>
+                <literature>Howard Giles, Philip Smith. 'Accommodation theory: Optimal levels of convergence'. s. 45-65; Mey, J. L., Concise Encyclopedia of Pragmatics, s. 992 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Matka mówiąca do dziecka. Policjant pouczający przechodnia. Wykładowca tłumaczący teorie dziennikarzowi.</example>
+            </tag>  
+            <tag id="13">
+                <name>CAT: Przyciąganie podobieństw</name>
+                <tag_name>sl:CAT:similarity</tag_name>
+                <description>Znaczniki akomodacji komunikacji, za pomocą których komunikujący się uczestnicy dostosowują charakter komunikacji na podstawie podobieństw - wspólnych zainteresowań, wartości, przynależności do grup społecznych.</description>
+                <literature>Howard Giles, Philip Smith. 'Accommodation theory: Optimal levels of convergence'. s. 45-65; Mey, J. L., Concise Encyclopedia of Pragmatics, s. 992 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Wymienianie zainteresowań na portalu randkowym</example>
+            </tag>  
+            <tag id="14">
+                <name>CAT: Proces wymiany społecznej</name>
+                <tag_name>sl:CAT:exchange</tag_name>
+                <description>Znaczniki akomodacji komunikacji, za pomocą których użytkownicy ewaluują odbiorcę lub potencjalnego odbiorcę.</description>
+                <literature>Howard Giles, Philip Smith. 'Accommodation theory: Optimal levels of convergence'. s. 45-65; Mey, J. L., Concise Encyclopedia of Pragmatics, s. 992 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Listy warunków które musi spełniać przyszły partner/partnerka na portalu randkowym.</example>
+            </tag>  
+            <tag id="15">
+                <name>CAT: Proces przewidywania przyczynowego</name>
+                <tag_name>sl:CAT:attribution</tag_name>
+                <description>Znaczniki akomodacji, za pomocą których użytkownicy próbują przewidzieć odbiorcę, jego zachowania i intencje. Następuje pozytywna lub negatywna atrybucja ekstrapolowana z niepełnych danych.</description>
+                <literature>Howard Giles, Philip Smith. 'Accommodation theory: Optimal levels of convergence'. s. 45-65; Mey, J. L., Concise Encyclopedia of Pragmatics, s. 992 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>W opisie aplikacji randkowej: "Wiem czego szukasz, ja jestem tą osobą"</example>
+            </tag> 
+            <tag id="16">
+                <name>CAT: Zróżnicowanie międzygrupowe</name>
+                <tag_name>sl:CAT:intergroup</tag_name>
+                <description>Znaczniki akomodacji, za pomocą których użytkownicy wytyczają granice swojej identyfikacji z grupą - porównują, oceniają różnice, wykazują świadomość swojej tożsamości społecznej (ja nie jestem jak oni).</description>
+                <literature>Howard Giles, Philip Smith. 'Accommodation theory: Optimal levels of convergence'. s. 45-65; Mey, J. L., Concise Encyclopedia of Pragmatics, s. 992 (Elsevier, 2009)</literature>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
+                <example>Na portalu randkowym: "Żałuję tych wszystkich frajerów z fotkami z siłowni, którzy chcą się tylko umawiać na seks."</example>
             </tag> 
         </family>
         <family name="Analiza Dyskursu" color="#6D7B8D">
