@@ -8,7 +8,7 @@
                 <tag_name>l:genre</tag_name>
                 <description>Gatunekt tekstu lub fragmentu tekstu.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 286 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Reportaż; notatka prasowa; wywiad; kodeks prawny etc.</example>
             </tag>
             <tag id="2">
@@ -16,7 +16,7 @@
                 <tag_name>l:dialogism</tag_name>
                 <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 181 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>
             <tag id="3">
@@ -24,7 +24,7 @@
                 <tag_name>p:narrativity</tag_name>
                 <description>Styl wypowiedzi mający cechy narracji. Nie musi być narracją (choć w pewnym sensie wszystko jest narracją) - ale jego funkcją jest opowiedzenie czegoś - komuś.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 661 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>
             <tag id="4">
@@ -32,7 +32,7 @@
                 <tag_name>l:metaphor</tag_name>
                 <description>Figura złożona z tematu, nośnika i motywacji (części wspólnej), wyrażająca coś za pomocą złożenia tych elementów. Może pełnić funkcję ozdobną, argumentacyjną, poznawczą, definicyjną.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 597 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Serce zadrżało mu na myśl, że świat może nie istnieć (wszedł w stan zaniepokojenia).</example>
             </tag>     
             <tag id="5">
@@ -40,7 +40,7 @@
                 <tag_name>l:metonymy</tag_name>
                 <description>Figura, poprzez którą jeden element zostaje zastąpiony drugim na mocy przyległości semantycznej. Metonimia eksploruje domeny pojęciowe i zapożycza ich elementy (transfer metonimiczny).</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 631 (Elsevier, 2009); Alan Cruse, Glossary of Semantics and Pragmatics, s. 108 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Profesor dostał Nobla za odkrycia w dziedzinie agresji laboratoryjnej (nagrodę im. Alfreda Nobla). Warszawa jest ewidentnie skłócona z Brukselą (polski rząd z polityką Unii Europejskiej).(</example>
             </tag> 
             <tag id="6">
@@ -48,7 +48,7 @@
                 <tag_name>l:elipsis</tag_name>
                 <description>Niekompletne zdanie, wyrzucona część zdania (stąd nazwa "wyrzutnia"), kluczowa do jego zrozumienia. Sens elipsy ujawnia się wyłącznie w kontekście.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 54 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example> - Jak się teraz czujesz? - Wspaniale. (zamiast - Czuję się teraz wspaniale.)</example>
             </tag>                    
             <tag id="7">
@@ -56,7 +56,7 @@
                 <tag_name>l:exclamation</tag_name>
                 <description>Wyrażenie służące do ekspresji emocji - zdziwienia, zaskoczenia, oburzenia itd. Zwykle połączone z silnym sentymentem, pozytywnym lub negatywnym.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 59 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Co za bezczelność!</example>
             </tag>             
             <tag id="8">
@@ -64,7 +64,7 @@
                 <tag_name>l:hyperbole</tag_name>
                 <description>Figura polegająca na przerysowaniu, wyolbrzymieniu (negatywnym lub pozytywnym).</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 80 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Kleszcze miał wielkości karaluchów. On nigdy nie przestaje mówić. Stoimy w korku wieczność.</example>
             </tag> 
             <tag id="9">
@@ -72,7 +72,7 @@
                 <tag_name>l:litote</tag_name>
                 <description>Niedopowiedzenie, umniejszenie. Figura, która zaniża ilość, intensywność, powagę, moc stwierdzenia.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 186 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"Trochę się zmęczyłem" (po maratonie).</example>
             </tag>     
             <tag id="10">
@@ -80,7 +80,7 @@
                 <tag_name>l:personification</tag_name>
                 <description>Figura polegająca na nadaniu ludzkich cech obiektowi nieludzkiemu.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 127 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Wulkan wściekle zagrzmiał, mściwie strzelił płomieniami.</example>
             </tag>   
             <tag id="11">
@@ -88,7 +88,7 @@
                 <tag_name>l:objectification</tag_name>
                 <description>Figura polegająca na odebraniu ludzkich cech osobie. Depersonifikacja, depersonalizacja, dehumanizacja.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Oni są niczym więcej jak śmierdzącym łajnem leżącym na środku drogi.</example>
             </tag>
             <tag id="12">
@@ -96,7 +96,7 @@
                 <tag_name>l:profanity</tag_name>
                 <description>Słowa i wyrażenia o wysokim ładunku afektywnym, łamiące normy społeczno-kulturowe.</description>
                 <literature>Benjamin K. Bergen, What the F: What Swearing Reveals About Our Language, Our Brains, and Ourselves (Basic Books, 2016).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Cholera.</example>
             </tag>            
             <tag id="13">
@@ -104,7 +104,7 @@
                 <tag_name>l:slurs</tag_name>
                 <description>Wulgaryzmy ad-personam. Obelgi, oszczerstwa, potwarze, szkalunki.</description>
                 <literature>Benjamin K. Bergen, What the F: What Swearing Reveals About Our Language, Our Brains, and Ourselves (Basic Books, 2016).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Ty cholero.</example>
             </tag>              
             <tag id="14">
@@ -112,7 +112,7 @@
                 <tag_name>l:simile</tag_name>
                 <description>Zestawienie dwóch rzeczy, wydarzeń, czynności.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 165 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Jej zęby lśniły jak perły w koronie monarchy.</example>
             </tag>                 
             <tag id="15">
@@ -120,7 +120,7 @@
                 <tag_name>l:modal:epistemic</tag_name>
                 <description>Czasowniki odpowiadające za wiedzę, poznanie, przekonania, percepcję</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 109 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Czuć; widzieć; słyszeć; myśleć; chcieć; wiedzieć; verba sentiendi</example>
             </tag>    
             <tag id="16">
@@ -128,7 +128,7 @@
                 <tag_name>l:modal:deontic</tag_name>
                 <description>Czasowniki odpowiadające za powinność, zobligowanie, poświęcenie, pozwolenie. Lub inne formy gramatyczne realizujące modalność</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 109 (Edinburgh University Press, 2006).</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Musieć; "możesz skończyć", "będziesz nagrodzony"</example>
             </tag>                 
         </family>
@@ -138,7 +138,7 @@
                 <tag_name>p:context</tag_name>
                 <description>Wspólna wiedza, nie wymagająca wyjaśnienia dla uczestników komunikacji. Kontekst może być również ustalany w toku wypowiedzi.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 119 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="base">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example></example>
             </tag>
             <tag id="2">
@@ -146,7 +146,7 @@
                 <tag_name>p:deixis</tag_name>
                 <description>Wskazanie, odwołanie do jakiegoś obiektu w czasie lub przestrzeni. Może służyć wzmocnieniu przekazu, wywołaniu kontekstu lub dyskursu.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 127, 178 (Elsevier, 2009)</literature>
-                <relation>Słowo</relation>
+                <relation type="base">Słowo</relation>
                 <example>To, tamto, tu, gdzie, wtedy, ten, tamta itd.</example>
             </tag>            
 
@@ -156,7 +156,7 @@
                 <tag_name>p:humor</tag_name>
                 <description>Żarty, komizmy, dwuznaczne aluzje, wypowiedzi mające na celu rozbawienie publiczności.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 335 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>            
             <tag id="5">
@@ -164,7 +164,7 @@
                 <tag_name>p:implicature</tag_name>
                 <description>Zachowanie komunikacyjne łamiące zasady kooperacji.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 365 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment i notatka użytkownika</relation>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
                 <example>"Duszno tutaj" - ukryta prośba o otworzenie okna.</example>
             </tag>      
             <tag id="6">
@@ -172,7 +172,7 @@
                 <tag_name>p:presuposition</tag_name>
                 <description>Implicytna wiedza zawarta w wypowiedzi. Nie ulega negacji. Presupozycje mogą być wykorzystywane retorycznie - np. polityk może wypowiadać stwierdzenia tak jakby wszyscy się co do nich zgadzali, stwarzając pozory prawdziwości wyłącznie poprzez konstrukcję zdań.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 759 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment i notatka użytkownika</relation>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
                 <example>"Chciałem tylko powiedzieć, że jestem wściekły za to że rozbiłeś samochód" (presupozycją jest fakt rozbicia samochodu, po zanegowaniu zdania ta presupozycja wciąż będzie w mocy). "Musimy zamknąć granice zanim imigranci przyjadą gwałcić nasze kobiety i rozsiewać choroby" (presuponowane przypisanie cech imigrantom)</example>
             </tag>      
             <tag id="7">
@@ -180,7 +180,7 @@
                 <tag_name>p:irony</tag_name>
                 <description>Figura polegająca na dwugłosowości, dystansie do znaczenia dosłownego. Jest to wyrażanie opinii na temat tego co się właśnie wyraża (a nie przedmiotu lub sytuacji do której odnosi się wypowiedź).</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 405 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>                     
             <tag id="8">
@@ -188,7 +188,7 @@
                 <tag_name>p:FTA:negative</tag_name>
                 <description>Zagrożenie po stronie słuchacza: żądania, prośby, propozycje, komplementy, obietnice; zagrożenie po stronie nadawcy: podziękowania, przyjmowanie propozycji.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 41 (Psychology Press, 2013)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>             
             <tag id="9">
@@ -196,7 +196,7 @@
                 <tag_name>p:FTA:positive</tag_name>
                 <description>Zagrożenie po stronie słuchacza: nieporozumienia, krytyka, skargi; Zagrożenie po stronie nadawcy:  przeprosiny, niekontrolowanie emocji, przyjęcie komplementu.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 41 (Psychology Press, 2013)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>   
             <tag id="10">
@@ -204,7 +204,7 @@
                 <tag_name>p:FTA:self</tag_name>
                 <description>Akty autodeprecjacji.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use (Psychology Press, 2013)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"Mógłbym zrobić tę prezentację, ale haha, naprawdę jestem niezbyt dobry z fizyki"</example>
             </tag>   
             <tag id="11">
@@ -212,7 +212,7 @@
                 <tag_name>p:polite:positive</tag_name>
                 <description>Akty dążące do "wyjścia naprzeciw odbiorcy - wytyczenie wspólnego gruntu, ustalenie współpracy, spełnianie życzeń i potrzeb odbiorcy, skracanie dystansu i familiarność.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 43 (Psychology Press, 2013)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>  
     
@@ -221,7 +221,7 @@
                 <tag_name>p:polite:negative</tag_name>
                 <description>Akty dążące do "zostawienia przestrzeni" odbiorcy. Unikanie bezpośrednich zwrotów, zostawianie dystansu, unikanie wywierania presji, unikanie konfrontacji, unikanie robienia założeń.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 43 (Psychology Press, 2013)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example></example>
             </tag>
             <tag id="13">
@@ -229,7 +229,7 @@
                 <tag_name>p:discmarkers</tag_name>
                 <description>Wtrącenia wytyczające granice pomiędzy jednostkami dyskursu/tematu w wypowiedzi. Są opcjonalne - ich brak nie sprawi że zdanie będzie niegramatyczne. Mogą mieć charakter propozycjonalny (wprowadzanie nowego tematu), mogą wzmacniać koherencję, a także wskazywać na istotność (lub brak istotności).</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 51 (Edinburgh University Press, 2006)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Hmm, więc, ale, och, cóż, ok, acha, spójrz, uwierz mi, zresztą, wow, dokładnie, nie jestem pewien, ponieważ, po pierwsze, w końcu, mam na myśli, wtedy etc.</example>
             </tag> 
             <tag id="14">
@@ -237,7 +237,7 @@
                 <tag_name>p:hedge</tag_name>
                 <description>Rodzaj intensyfikatora. Wyrażenia o wymiarze pragmatycznym osłabiające przekaz. Związane ze strategiami grzeczności i twarzy.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 79 (Edinburgh University Press, 2006)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"Chciałbym na trochę zostać." (vs. chciałbym zostać); "Tak jakby się tym stresuję"; "W pewnym sensie jest nieśmiała".</example>
             </tag>   
             <tag id="15">
@@ -245,7 +245,7 @@
                 <tag_name>p:booster</tag_name>
                 <description>Rodzaj intensyfikatora. Wzmocnienia przekazu o wymiarze pragmatycznym, wzmacniające zaangażowanie. Służą grzecznośći pozytywnej.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 89 (Edinburgh University Press, 2006)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"BARDZO mi się to podoba"; "KONIECZNIE musimy się spotkać"</example>
             </tag>      
             <tag id="16">
@@ -253,7 +253,7 @@
                 <tag_name>p:topic</tag_name>
                 <description>Temat dyskursu to informacja, która stanowi punkt wyjścia dla wypowiedzi, to co zazwyczaj w wypowiedzi już znane, gotowe, wcześniej przywoływane, wspólna część wiedzy pomiędzy nadawcą i odbiorcą.</description>
                 <literature>Tomlin R.S. i in., Semantyka dyskursu (Tematyczna i rematyczna organizacja dyskursu), w: T. A. van Dijk (red.), Dyskurs jako struktura i proces, Warszawa 2001: Wydawnictwo Naukowe PWN, s. 61-84.</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"Jan (Temat) kupił parasol (Remat). Kupiony przez Jana parasol (Temat) był tani, ale wytrzymały (Remat)"</example>
             </tag> 
             <tag id="17">
@@ -261,7 +261,7 @@
                 <tag_name>p:focus</tag_name>
                 <description>Część informacyjna wypowiedzi, to czego odbiorca powinien się dowiedzieć. Zwykle po orzeczeniu.</description>
                 <literature>Tomlin R.S. i in., Semantyka dyskursu (Tematyczna i rematyczna organizacja dyskursu), w: T. A. van Dijk (red.), Dyskurs jako struktura i proces, Warszawa 2001: Wydawnictwo Naukowe PWN, s. 61-84.</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"Jan (Temat) kupił parasol (Remat). Kupiony przez Jana parasol (Temat) był tani, ale wytrzymały (Remat)"</example>
             </tag> 
             <tag id="18">
@@ -269,8 +269,9 @@
                 <tag_name>p:pun</tag_name>
                 <description>Kalambur, gra słowna, suchar. Konstrukcja wykorzystująca właściwości struktury semantycznej i podobnego brzmienia słów, do stworzenia żartu. Może być amalgamatem kognitywnym.</description>
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 148 (Edinburgh University Press, 2006)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>"A life in politics is full of parties"</example>
+            </tag>
         </family>
         <family name="Retoryka" color="#5e3219">
             ...
@@ -281,7 +282,7 @@
                 <tag_name>sl:cswitch</tag_name>
                 <description>Zmiana języka, rejestru lub kodu podczas wypowiedzi. Naprzemienne użycie dwóch lub więcej kodów.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literature>
-                <relation>Cała fraza</relation>
+                <relation type="base">Cała fraza</relation>
                 <example>"Zbliża się kolejny egzamin. FML kill me plz"</example>
             </tag>
             <tag id="2">
@@ -289,7 +290,7 @@
                 <tag_name>sl:cswitch:mix</tag_name>
                 <description>Podczas gdy Code Switching odnosi się ogólnie do zmiany kodu, code-mixing polega na mieszaniu kodów na poziomie składniowym, w obrębie zdania.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 69 (Elsevier, 2009)</literature>
-                <relation>Cała fraza</relation>
+                <relation> type="base"Cała fraza</relation>
                 <example>"Sometimes I’ll start a sentence in English y termino en español."</example>
             </tag>     
             <tag id="3">
@@ -297,7 +298,7 @@
                 <tag_name>sl:community:disc</tag_name>
                 <description>Charakterystyczny styl komunikacji związany ze wspólnotą ludzi, komunikujących się ze sobą w określonym celu. Może się realizować na poziomie leksyki, składni, doboru tematów. Przy wyborze etykiety należy wprowadzić nazwę wspólnoty.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 109 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. Wspólnota: politycy; uczniowie; prawnicy</example>
             </tag>
             
@@ -306,7 +307,7 @@
                 <tag_name>sl:community:speech</tag_name>
                 <description>Charakterystyczny styl komunikacji związany ze wspólnotą ludzi, komunikujących się w obrębie jakiejś przestrzeni geograficznej. Przy wyborze etykiety należy wprowadzić nazwę wspólnoty.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 109 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. Wspólnota: warszawiacy; ślązacy</example>
             </tag>
             <tag id="5">
@@ -314,7 +315,7 @@
                 <tag_name>sl:footing</tag_name>
                 <description>Umocowanie - footing, jest pozycją zajmowaną w konwersacji. Osoba może przyjmować różne pozycje - style konwersacyjne w zależności od kontekstu, odbiorcy. Te pozycje mogą być instytucjonalne, interakcyjne, socjokulturowe. Nadawcy są tu rozumiani jako aktorzy społeczni.</description>
                 <literature>Natalie Schilling and Scott Kiesling, ‘Language Style as Identity Construction: A Footing and Framing Approach’.</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Przyjęta postawa: matka; dyrektorka; klientka.</example>
             </tag>
             <tag id="6">
@@ -322,7 +323,7 @@
                 <tag_name>sl:register:high</tag_name>
                 <description>Sposób pisania lub mówienia odpowiadający wysokiemu stylowi.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Styl akademicki</example>
             </tag>     
             <tag id="7">
@@ -330,7 +331,7 @@
                 <tag_name>sl:register:low</tag_name>
                 <description>Sposób pisania lub mówienia postrzegany jako np. potoczny.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment</relation>
+                <relation type="base">Dowolny fragment</relation>
                 <example>Rozmowa studentek i studentów na korytarzu.</example>
             </tag>     
             <tag id="8">
@@ -338,7 +339,7 @@
                 <tag_name>sl:register:user</tag_name>
                 <description>Charakterystyczny rejestr wyróżniający dany tekst/wypowiedź. Użytkownik opisuje rodzaj rejestru.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 847 (Elsevier, 2009)</literature>
-                <relation>Dowolny fragment i notatka użytkownika</relation>
+                <relation type="note">Dowolny fragment i notatka użytkownika</relation>
                 <example>Rejestr: klasa średnia</example>
             </tag> 
         </family>
@@ -348,7 +349,7 @@
                 <tag_name>kad:field</tag_name>
                 <description>Obszar funkcjonowania dyskursu. Np. w przypadku partii politycznej może to być poziom konstruowania prawa, poziom PR, poziom wewnętrznej komunikacji partyjnej, reklama, poziom administracji, obszar poza kontrolą (np. działania partii opozycyjnych).</description>
                 <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example></example>
             </tag>
             <tag id="2">
@@ -356,7 +357,7 @@
                 <tag_name>kad:genre</tag_name>
                 <description>Gatunek realizowany wewnątrz obszaru działania. Np. wywiad telewizyjny wewnątrz obszaru PR, bilboard wewnątrz obszaru reklamy</description>
                 <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example></example>
             </tag> 
             <tag id="3">
@@ -364,7 +365,7 @@
                 <tag_name>kad:topic</tag_name>
                 <description>Temat realizowany poprzez gatunek.</description>
                 <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. dyskurs imigracji w gatunku konferencji prasowej w obszarze PR</example>
             </tag>            
             <tag id="4">
@@ -372,7 +373,7 @@
                 <tag_name>kad:metaphor</tag_name>
                 <description>Artefakt językowy. Zamrożone metafory. Metafory rozumiane jako narzędzie rozpowszechniania ideologii, obrazowania zmiany, kształtowania znaczenia. Redukują niepewność spotkania z nowością.</description>
                 <literature>Czarniawska B., Słowa, czyny i kontrola, w: taż, Trochę inna teoria organizacji. Organizowanie jako konstrukcja sieci działań, Warszawa 2010</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>"Centralne urzędy gminy stały się 'cmentarzami dinozaurów'"; "Czas tchnąć nowe życie w zamierające organizacje polityczne"</example>
             </tag>                 
             <tag id="5">
@@ -380,7 +381,7 @@
                 <tag_name>kad:labels</tag_name>
                 <description>Artefakt językowy. Poprzez nadanie nazwy konstruuje się rzeczywistość - etykiety noszą ze sobą instrukcje działania, nadają znaczenie, usuwają niejednoznaczności.</description>
                 <literature>Czarniawska B., Słowa, czyny i kontrola, w: taż, Trochę inna teoria organizacji. Organizowanie jako konstrukcja sieci działań, Warszawa 2010</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. reforma szwedzkich gmin w latach osiemdziesiątych była etykietowana jako "koszt" lub jako "decentralizacja" - z różnymi konsekwencjami dla postrzegania reformy.</example>
             </tag>     
             <tag id="6">
@@ -388,7 +389,7 @@
                 <tag_name>kad:banalities</tag_name>
                 <description>Artefakt językowy. Martwa metafory. Oczywiste oczywistości. Służą wzmacnianiu przekonań, neutralizacji krytyki i konfliktów. Są przeciwieństwem ironii.</description>
                 <literature>Czarniawska B., Słowa, czyny i kontrola, w: taż, Trochę inna teoria organizacji. Organizowanie jako konstrukcja sieci działań, Warszawa 2010</literature>
-                <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
+                <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>"Demokracja wymaga czasu"; "Trzeba skrócić linię między decyzją a jej wykonaniem"; "Osoby podejmujące decyzje muszą dobrze znać rzeczywistość"</example>
             </tag>                 
         </family>

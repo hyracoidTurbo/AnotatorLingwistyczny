@@ -28,12 +28,13 @@ class annotatorApp(tk.Tk):
         self.geometry("800x500+20+20")    
         self.grid()
         
-        
+        self.currentFamily = ''
 
         self.root = lxml.etree.Element("root")
         lxml.etree.SubElement(self.root, "head")
         lxml.etree.SubElement(self.root, "tags")
         lxml.etree.SubElement(self.root, "fulltext")
+        
 
         self.textBoxMain = tk.Text()
         self.textBoxMain.grid(sticky ="nswe", column=0, row =1)
@@ -55,7 +56,10 @@ class annotatorApp(tk.Tk):
             self.tagList.bind("<Double-Button-1>", self.test_callback)
         
         
-        button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.new_annatation())
+        button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.annotate(self.tagList.get(self.tagList.curselection()), \
+        self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/tag_name').text, \
+        self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/relation').attrib['type']))
+
         button_newAnn.grid(row=2, column = 2)
         
         menuBar = tk.Menu(self)   
@@ -77,12 +81,15 @@ class annotatorApp(tk.Tk):
         self.config(menu = menuBar)
 #    def change_language(self, key):
 #        return
+    
+
     def test_callback(self, event):
         if(self.family):
             self.family=False
             name = self.tagList.get(self.tagList.curselection())
             self.tagList.delete(0,'end')
             self.tagList.insert(0,self.setting.get(self.language,'back'))
+            self.currentFamily = name
             if self.tags.find('family[@name="'+ name +'"]/tag') is not None:
                 names = [events for events in self.tags.findall('family[@name="'+ name +'"]/tag/name')]
                 for j in range(len(names)):
@@ -196,7 +203,7 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.config(state="disabled")
         
 
-    def annotate_base(self, tag):
+    def annotate_base(self, tag, tag_name):
     
         selectionStart = self.textBoxMain.index("sel.first")
         selectionEnd = self.textBoxMain.index("sel.last")    
@@ -230,8 +237,9 @@ class annotatorApp(tk.Tk):
         if self.root.find('./head/tag[@name="'+tag+'"]') is None:
             mtag = lxml.etree.Element("tag") 
             mtag.attrib["name"]=tag
+            mtag.attrib["tag_name"]=tag_name
             mtag.attrib["amount"]="1"
-            self.root.find("./head/tag").append(mtag) 
+            self.root.find("./head").append(mtag) 
         else:
             self.root.find('./head/tag[@name="'+tag+'"]').attrib["amount"]= str(int(self.root.find('./head/tag[@name="'+tag+'"]').attrib["amount"])+1)
 
@@ -239,21 +247,27 @@ class annotatorApp(tk.Tk):
         etag = lxml.etree.Element("tag") 
         etag.text = self.textBoxMain.selection_get()
         etag.attrib["name"]=tag
+        etag.attrib['tag_name']=tag_name
         etag.attrib["beginning"]=str(selectionStartIdx)
         etag.attrib["end"]=str(selectionEndIdx)
         etag.attrib["lenght"]=str(selectionEndIdx-selectionStartIdx)
         self.root.find("./tags").append(etag) 
-
+    
+    def annotate_note(self, tag, tag_name ):
+        pass
 
     
-    def annotate(self, tag, tag_type):
+    def annotate(self, tag, tag_name, tag_type):
+        if tag_type is None or tag is None:
+            return
         switcher = {
             "base": self.annotate_base,    
-            
+            "note": self.annotate_note
+
         }
     
-        func = switcher.get(tag_type, lambda: "Invalid month")
-        func(self, tag)
+        func = switcher.get(tag_type, lambda y,x: print("Invalid type"))
+        func(tag, tag_name)
 
       
 app = annotatorApp()
