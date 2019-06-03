@@ -351,6 +351,14 @@
                 <relation type="base">Cała fraza</relation>
                 <example>Grek Simonides powiedział, że wszyscy Grecy kłamią. A zatem jeśli prawdą jest, że Grekiem jest Simonides i wszyscy Grecy kłamią, to Simonides skłamał, a skoro skłamał, to nieprawdziwe jest przytoczone twierdzenie. </example>
             </tag>
+            <tag id="6">
+                <name>Trop retoryczny</name>
+                <tag_name>r:trope</tag_name>
+                <description>Semantyczna zawartość argumentacji, powracający motyw użyty retorycznie. Tropy mogą manifestować się jako metafory, metonimie, synekdochy.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 882 (Elsevier, 2009)</literature>
+                <relation type="note">User input</relation>
+                <example>W dyskursie o migrantach: "katastrofa naturalna", "potop", "punkt wrzenia", "wykorzenienie", "zanieczyszczenie", "obce ciało"</example>
+            </tag>
         </family>
         <family name="Socjolingwistyka" color="#357EC7">
             <tag id="1">
@@ -376,8 +384,7 @@
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 109 (Elsevier, 2009)</literature>
                 <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example>Np. Wspólnota: politycy; uczniowie; prawnicy</example>
-            </tag>
-            
+            </tag>          
             <tag id="4">
                 <name>Wspólnota Mowy</name>
                 <tag_name>sl:community:speech</tag_name>
