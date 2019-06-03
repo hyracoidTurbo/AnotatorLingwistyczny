@@ -367,6 +367,22 @@
                 <relation type="note">User input</relation>
                 <example>W dyskursie o migrantach: "katastrofa naturalna", "potop", "punkt wrzenia", "wykorzenienie", "zanieczyszczenie", "obce ciało"</example>
             </tag>
+            <tag id="7">
+                <name>Protaza</name>
+                <tag_name>r:protasis</tag_name>
+                <description>Fraza zdaniowa w zdaniu warunkowym (często wprowadzana przez "jeżeli"), która ustala warunek przy którym twierdzenie z drugiej części zdania jest prawdziwe.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 145 (Edinburgh University Press, 2006)</literature>
+                <relation type="base">Fraza</relation>
+                <example>Z praw Hammurabiego: "Jeśli popełniający kradzież zostanie schwytany..."</example>
+            </tag>
+            <tag id="8">
+                <name>Apodoza</name>
+                <tag_name>r:apodosis</tag_name>
+                <description>Fraza zdaniowa zdania warunkowego, będąca logiczną konsekwencją warunku.</description>
+                <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 145 (Edinburgh University Press, 2006)</literature>
+                <relation type="base">Fraza</relation>
+                <example>Z praw Hammurabiego: "...to zostanie skazany na śmierć."</example>
+            </tag>
         </family>
         <family name="Socjolingwistyka" color="#357EC7">
             <tag id="1">
