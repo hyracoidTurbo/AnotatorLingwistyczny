@@ -102,11 +102,7 @@ class annotatorApp(tk.Tk):
                 for j in range(len(self.tagNameList)):
                     self.tagList.insert(j, self.tagNameList[j])
             else:
-                print(self.tagList.get(self.tagList.curselection()))
-    def prettify(self, elem):
-        rough_string = lxml.etree.ElementTree.tostring(elem, 'utf-8')
-        reparsed = lxml.etree.minidom.parseString(rough_string)
-        return reparsed.toprettyxml(indent="\t")        
+                print(self.tagList.get(self.tagList.curselection()))     
 
     def save_file(self, root):
         f = filedialog.asksaveasfile(mode='a', defaultextension=".xml")
@@ -115,7 +111,7 @@ class annotatorApp(tk.Tk):
         if root.find('./head/tag') is not None:
             tree = lxml.etree.ElementTree()
             tree._setroot(root)
-            self.prettify(tree).write(f.name)
+            tree.write(f.name)
             
   
     def load_file(self, wordList):
