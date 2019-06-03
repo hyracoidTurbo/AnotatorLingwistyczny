@@ -130,7 +130,31 @@
                 <literature>Alan Cruse, Glossary of Semantics and Pragmatics, s. 109 (Edinburgh University Press, 2006).</literature>
                 <relation>Dowolny fragment</relation>
                 <example>Musieć; "możesz skończyć", "będziesz nagrodzony"</example>
-            </tag>                 
+            </tag>
+            <tag id="16">
+                <name>Mowa niezależna</name>
+                <tag_name>l:oratio:recta</tag_name>
+                <description>Przytaczanie wypowiedzi za pomocą w formie cytowania, dialogu lub monologu, bez zmiany formy.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 861 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>"Co może uczynić nas mocniejszymi?" - zapytał</example>
+            </tag>  
+            <tag id="16">
+                <name>Mowa zależna</name>
+                <tag_name>l:oratio:obliqua</tag_name>
+                <description>Przytoczenie w formie zdania podrzędnego dopełnieniowego, oryginalna wypowiedź ma zmienioną formę, jest wtopiona w zdanie przytaczające. Stworzenie mowy zależnej wymaga perspektywizacji.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 861 (Elsevier, 2009)</literature>
+                <relation>Dowolny fragment</relation>
+                <example>Zapytał co może uczynić ich mocniejszymi.</example>
+            </tag>
+            <tag id="16">
+                <name>Mowa pozornie zależna</name>
+                <tag_name>l:oratio:FIS</tag_name>
+                <description>Forma pośrednia pomiędzy mową zależną i niezależną. Wykorzystywana w narracji do przedstawienia wypowiedzi lub myśli i doznań bohaterów, jednak za pomocą swoich słów.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 861 (Elsevier, 2009); Cerquiglini, B., ‘Mowa Pozornie Zależna i Nowoczesność’, Pamiętnik Literacki: czasopismo kwartalne poświęcone historii i krytyce literatury polskiej, 1990, 337–48.</literature>
+                <relation>Dowolny fragment</relation>
+                <example>„Och, wspomnienia, wspomnienia raju, które sam jednym uderzeniem na zawsze zniweczył! Wspomnienia wieczoru w obcym mieści, kiedy w hotelu zastukał do drzwi numeru”. "Ona  skupiła  wszelką  moc  w  sobie, Raczej  na  pęta  gotowa  srogie, Niżby  dziewictwo  cenne  postradać.", "Wczoraj  dzwonił  do  mnie  Paweł.  Był  bardzo  załamany  i  prosił  mnie  o  pomoc.Czyż  mogłem  się  z  nim  spotkać?", "Nakazał  wtrącić  odźwiernego  do  ciemnicy,  dodając,  że  zapłaci  za  brak posłuszeństwa"</example>
+            </tag>
         </family>
         <family name="Pragmatyka" color="#F87217">
             <tag id="1">
@@ -141,6 +165,14 @@
                 <relation>Dowolne zaznaczenie i notatka użytkownika</relation>
                 <example></example>
             </tag>
+            <tag id="3">
+                <name>Zwrotność</name>
+                <tag_name>p:reflexivity</tag_name>
+                <description>Na poziomie lingwistycznym użycie zaimków takich jak się, siebie, mnie. Na poziomie pragmatycznym jest to odwołanie do samego siebie, deiksa do własnej osoby, wskazanie na kontekst wynikający z pierwszej osoby.</description>
+                <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 846 (Elsevier, 2009)</literature>
+                <relation>Słowo</relation>
+                <example>"Widzę się w tej sytuacji."</example>
+            </tag>            
             <tag id="2">
                 <name>Deiksa</name>
                 <tag_name>p:deixis</tag_name>
@@ -148,9 +180,7 @@
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 127, 178 (Elsevier, 2009)</literature>
                 <relation>Słowo</relation>
                 <example>To, tamto, tu, gdzie, wtedy, ten, tamta itd.</example>
-            </tag>            
-
-                      
+            </tag>               
             <tag id="4">
                 <name>Humor</name>
                 <tag_name>p:humor</tag_name>
