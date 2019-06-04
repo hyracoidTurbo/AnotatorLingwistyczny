@@ -26,7 +26,7 @@ class annotatorApp(tk.Tk):
         self.setting.read('config.ini')
         self.language=self.setting.get('general','language')
         tk.Tk.__init__(self, *args, **kwargs)
-        self.geometry("800x500+20+20")    
+        self.geometry("842x500+20+20")    
         self.grid()
         
         self.currentFamily = ''
@@ -45,8 +45,8 @@ class annotatorApp(tk.Tk):
         self.textBoxAnn.grid(sticky ="nswe", column=1, row =1)
         self.textBoxAnn.config(state="disabled")
         
-        self.opisBox = tk.Text(wrap="word")
-        self.opisBox.grid(sticky ="nswe", column = 0, row = 2)
+        self.opisBox = tk.Text(wrap="word", height = 8)
+        self.opisBox.grid(sticky ="nwe", column = 0, row = 2)
         self.opisBox.config(state = "disabled")
         
         self.family=True
@@ -60,14 +60,11 @@ class annotatorApp(tk.Tk):
             self.tagList.grid(row=1, column = 2, sticky = "wn")
             self.tagList.bind("<Double-Button-1>", self.taglist_callback)
         
-        self.opisBox = tk.Text(wrap="word")
-        self.opisBox.grid(sticky ="nswe", column = 0, row = 2)
-        self.opisBox.config(state = "disabled")
         button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.annotate(self.tagList.get(self.tagList.curselection()), \
         self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/tag_name').text, \
         self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/relation').attrib['type']))
 
-        button_newAnn.grid(row=2, column = 2)
+        button_newAnn.grid(row=2, column = 2, sticky = "n")
         
         menuBar = tk.Menu(self)   
         menuFile = tk.Menu(menuBar, tearoff = 0)
@@ -162,18 +159,27 @@ class annotatorApp(tk.Tk):
             print("Error-Error\nPlik musi mieć format '.txt'")
             pass
 
+        self.utf8 = 0
         with open(self.textDir) as f:
             for line in f:
                 for word in line.split():
                     w = re.sub('[^A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż]', '', word)
                     annotatorApp.wordList.append(w)
-  #      print(annotatorApp.wordList)
+                    
+        if annotatorApp.wordList[0][0] == "ż":
+            self.utf8 = 1
+            annotatorApp.wordList[0] = annotatorApp.wordList[0][1:]
         
         # tworzenie wordList2
         fullText = ""
         with open(self.textDir) as f:
             for row in f:
                 fullText += row
+                
+        fullText = re.sub('[^A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż ]', '', fullText)
+        if fullText[0] == "ż":
+            print("tak")
+            fullText = fullText[1:]
      #   print(fullText)
         poczatek = 0
         niepasuje = 0
@@ -232,7 +238,11 @@ class annotatorApp(tk.Tk):
             
         with open(self.textDir) as f:
             for row in f:
-                self.textBoxMain.insert("end", str(row) + "\n")
+                if self.utf8 == 1:
+                    self.utf8 = 0
+                    self.textBoxMain.insert("end", str(row)[3:] + "\n")
+                else:
+                    self.textBoxMain.insert("end", str(row) + "\n")
             
         annDict = {"000001" : ["1.0", "2.3"]}
         for ann in annDict:
