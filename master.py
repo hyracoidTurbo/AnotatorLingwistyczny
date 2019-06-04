@@ -136,7 +136,7 @@ class annotatorApp(tk.Tk):
                 opis = self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/description').text
                 opis += "\n"
                 opis += self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/literature').text
-                opis += "\n"
+                opis += "\nPrzykład:\n"
                 opis += self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/example').text
                 self.opisBox.delete('1.0', "end")
                 self.opisBox.insert(tk.END, opis)
