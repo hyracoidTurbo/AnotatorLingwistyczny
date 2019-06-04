@@ -134,7 +134,7 @@ class annotatorApp(tk.Tk):
                 self.displey_tag(self.tagList.get(self.tagList.curselection()))
                 self.opisBox.config(state = "normal")
                 opis = self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/description').text
-                opis += "\n"
+                opis += "\n\nLiteratura\n"
                 opis += self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/literature').text
                 opis += "\nPrzykład:\n"
                 opis += self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/example').text
