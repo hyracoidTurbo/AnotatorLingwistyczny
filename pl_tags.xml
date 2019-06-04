@@ -16,7 +16,7 @@
                 <description>Dialogiczny charakter tekstu oznacza styl, w którym tekst ma cechy dialogu, nawet jeśli dialogiem nie jest. Tekst presuponuje odbiorcę i zawiera elementy interakcji, lub w jakiś sposób symuluje interakcję.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 181 (Elsevier, 2009)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>
             <tag id="3">
                 <name>Narracyjność</name>
@@ -24,7 +24,7 @@
                 <description>Styl wypowiedzi mający cechy narracji. Nie musi być narracją (choć w pewnym sensie wszystko jest narracją) - ale jego funkcją jest opowiedzenie czegoś - komuś.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 661 (Elsevier, 2009)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>
             <tag id="4">
                 <name>Metafora</name>
@@ -178,7 +178,7 @@
                 <description>Wspólna wiedza, nie wymagająca wyjaśnienia dla uczestników komunikacji. Kontekst może być również ustalany w toku wypowiedzi.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 119 (Elsevier, 2009)</literature>
                 <relation type="base">Dowolne zaznaczenie i notatka użytkownika</relation>
-                <example></example>
+                <example>.</example>
             </tag>
             <tag id="3">
                 <name>Zwrotność</name>
@@ -202,7 +202,7 @@
                 <description>Żarty, komizmy, dwuznaczne aluzje, wypowiedzi mające na celu rozbawienie publiczności.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 335 (Elsevier, 2009)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>            
             <tag id="5">
                 <name>Implikatura</name>
@@ -226,7 +226,7 @@
                 <description>Figura polegająca na dwugłosowości, dystansie do znaczenia dosłownego. Jest to wyrażanie opinii na temat tego co się właśnie wyraża (a nie przedmiotu lub sytuacji do której odnosi się wypowiedź).</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 405 (Elsevier, 2009)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>                     
             <tag id="8">
                 <name>FTA - Akty zagrażające negatywnej twarzy</name>
@@ -234,7 +234,7 @@
                 <description>Zagrożenie po stronie słuchacza: żądania, prośby, propozycje, komplementy, obietnice; zagrożenie po stronie nadawcy: podziękowania, przyjmowanie propozycji.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 41 (Psychology Press, 2013)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>             
             <tag id="9">
                 <name>FTA - Akty zagrażające pozytywnej twarzy</name>
@@ -242,7 +242,7 @@
                 <description>Zagrożenie po stronie słuchacza: nieporozumienia, krytyka, skargi; Zagrożenie po stronie nadawcy:  przeprosiny, niekontrolowanie emocji, przyjęcie komplementu.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 41 (Psychology Press, 2013)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>   
             <tag id="10">
                 <name>FTA - Akty zagrażające własnej twarzy</name>
@@ -258,7 +258,7 @@
                 <description>Akty dążące do "wyjścia naprzeciw odbiorcy - wytyczenie wspólnego gruntu, ustalenie współpracy, spełnianie życzeń i potrzeb odbiorcy, skracanie dystansu i familiarność.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 43 (Psychology Press, 2013)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>  
     
             <tag id="12">
@@ -267,7 +267,7 @@
                 <description>Akty dążące do "zostawienia przestrzeni" odbiorcy. Unikanie bezpośrednich zwrotów, zostawianie dystansu, unikanie wywierania presji, unikanie konfrontacji, unikanie robienia założeń.</description>
                 <literature>Mey, J. L., Concise Encyclopedia of Pragmatics, s. 711 (Elsevier, 2009); Leech, Geoffrey N., The Pragmatics of Politeness (Oxford University Press, 2014); Holtgraves, Thomas M., Language As Social Action: Social Psychology and Language Use, s. 43 (Psychology Press, 2013)</literature>
                 <relation type="base">Dowolny fragment</relation>
-                <example></example>
+                <example>.</example>
             </tag>
             <tag id="13">
                 <name>Znaczniki dyskursu</name>
@@ -521,7 +521,7 @@
                 <description>Obszar funkcjonowania dyskursu. Np. w przypadku partii politycznej może to być poziom konstruowania prawa, poziom PR, poziom wewnętrznej komunikacji partyjnej, reklama, poziom administracji, obszar poza kontrolą (np. działania partii opozycyjnych).</description>
                 <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
                 <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
-                <example></example>
+                <example>.</example>
             </tag>
             <tag id="2">
                 <name>Gatunek tekstu</name>
@@ -529,7 +529,7 @@
                 <description>Gatunek realizowany wewnątrz obszaru działania. Np. wywiad telewizyjny wewnątrz obszaru PR, bilboard wewnątrz obszaru reklamy</description>
                 <literature>Wodak, Ruth, and Michał Krzyżanowski, Qualitative Discourse Analysis in the Social Sciences. s. 16 (Macmillan International Higher Education, 2008); Mey, J. L., Concise Encyclopedia of Pragmatics, s. 727 (Elsevier, 2009)</literature>
                 <relation type="note">Dowolne zaznaczenie i notatka użytkownika</relation>
-                <example></example>
+                <example>.</example>
             </tag> 
             <tag id="3">
                 <name>Temat dyskursu</name>
