@@ -58,7 +58,7 @@ class annotatorApp(tk.Tk):
             for j in range(len(self.tagNameList)):
                 self.tagList.insert(j, self.tagNameList[j])
             self.tagList.grid(row=1, column = 2, sticky = "wn")
-            self.tagList.bind("<Double-Button-1>", self.taglist_callback)
+            self.tagList.bind("<Button-1>", self.taglist_callback)
         
         button_newAnn = tk.Button(text = self.setting.get(self.language,'new_annotation') , command = lambda: self.annotate(self.tagList.get(self.tagList.curselection()), \
         self.tags.find('./family[@name="'+ self.currentFamily +'"]/tag[name="'+self.tagList.get(self.tagList.curselection()) +'"]/tag_name').text, \
@@ -114,7 +114,7 @@ class annotatorApp(tk.Tk):
 
     def taglist_callback(self, event):
         if(self.family):
-            self.family=False
+            
             name = self.tagList.get(self.tagList.curselection())
             self.tagList.delete(0,'end')
             self.tagList.insert(0,self.setting.get(self.language,'back'))
@@ -123,13 +123,13 @@ class annotatorApp(tk.Tk):
                 names = [events for events in self.tags.findall('family[@name="'+ name +'"]/tag/name')]
                 for j in range(len(names)):
                     self.tagList.insert(j+1, names[j].text)
-            
+            self.family=False
         else:
             if self.tagList.curselection()[0]==0:
-                self.family=True
                 self.tagList.delete(0,'end')
                 for j in range(len(self.tagNameList)):
                     self.tagList.insert(j, self.tagNameList[j])
+                self.family=True
             else:
                 self.displey_tag(self.tagList.get(self.tagList.curselection()))
                 self.opisBox.config(state = "normal")
