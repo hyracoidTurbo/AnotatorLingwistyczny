@@ -158,8 +158,12 @@ class annotatorApp(tk.Tk):
         annotatorApp.wordList = []
         
         if not self.textDir.endswith('.txt'):
-            print("Error-Error\nPlik musi mieć format '.txt'")
-            pass
+            if not self.textDir.endswith('.txt'):
+                print("Error-Error\nPlik musi mieć format '.txt' lub '.xml'")
+                pass
+            else:
+                self.root = ET.parse(self.textDir) 
+                return
 
         self.utf8 = 0
         with open(self.textDir) as f:
