@@ -160,7 +160,7 @@ class annotatorApp(tk.Tk):
         if not self.textDir.endswith('.txt'):
             if not self.textDir.endswith('.txt'):
                 print("Error-Error\nPlik musi mieć format '.txt' lub '.xml'")
-                pass
+                return
             else:
                 self.root = ET.parse(self.textDir) 
                 return
